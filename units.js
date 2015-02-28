@@ -306,6 +306,572 @@ var units = {
 		shield: 3,
 		attacks: [1,1,0,0,0,0,0,1],
 		moves: [1,1,0,0,0,0,0,1]
+	}],
+	elves: [{
+		name: "Erendrial Aegis",
+		rank: "general",
+		type: "infantry",
+		shield: 6,
+		attacks: [3,4,2,0,0,0,2,4]
+	},{
+		name: "Elven Dragoon",
+		rank: "elite",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,1,0,0,0,2,3,3]
+	},{
+		name: "Elven Dragoon",
+		rank: "elite",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,3,3,2,0,0,0,1]
+	},{
+		name: "Elven Royal Guard",
+		rank: "elite",
+		type: "spear",
+		shield: 4,
+		attacks: [3,2,2,0,0,0,2,2],
+		quantity: 2
+	},{
+		name: "Elven Lancemaster",
+		rank: "veteran",
+		type: "spear",
+		shield: 5,
+		attacks: [0,0,0,1,5,1,0,0]
+	},{
+		name: "Elven Archer",
+		rank: "veteran",
+		type: "ranged",
+		shield: 4,
+		attacks: [1,1,1,0,0,0,1,1],
+		shoots: 3,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		quantity: 3
+	},{
+		name: "Elven Swordsquall",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [2,2,2,0,0,1,2,2]
+	},{
+		name: "Elven Swordsquall",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [2,2,2,1,0,0,2,2]
+	},{
+		name: "Elven Bowmaiden",
+		rank: "special",
+		type: "ranged",
+		shield: 4,
+		attacks: [2,2,1,0,0,0,1,2],
+		shoots: 4,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		quantity: 2
+	},{
+		name: "Elven Chariot",
+		rank: "special",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,4,5,4,2,0,0,0]
+	},{
+		name: "Elven Chariot",
+		rank: "special",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,0,0,0,2,4,5,4]
+	},{
+		name: "Elven Ballista",
+		rank: "regular",
+		type: "ranged",
+		shield: 3,
+		attacks: [2,0,0,0,0,0,0,0],
+		shoots: 5,
+		hits: [[-1,3],[0,1],[0,2],[0,3],[1,3]],
+		quantity: 2
+	},{
+		name: "Elven Lightedge",
+		rank: "regular",
+		type: "infantry",
+		shield: 3,
+		attacks: [3,1,0,0,0,0,0,2]
+	},{
+		name: "Elven Lightedge",
+		rank: "regular",
+		type: "infantry",
+		shield: 3,
+		attacks: [3,2,0,0,0,0,0,1]
+	},{
+		name: "Elven Lancewielder",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [1,1,3,0,0,0,0,0]
+	},{
+		name: "Elven Lancewielder",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [1,0,0,0,0,0,3,1]
+	},{
+		name: "Elven Battle Tiger",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [0,2,3,2,0,0,0,0]
+	},{
+		name: "Elven Battle Tiger",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [0,0,0,0,0,2,3,2]
+	},{
+		name: "Elven Puresoul",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,5,5,0,0,0,0,0]
+	},{
+		name: "Elven Puresoul",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,0,5,5,0,0,0,0]
+	},{
+		name: "Elven Puresoul",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,0,0,0,0,5,5,0]
+	},{
+		name: "Elven Puresoul",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,0,0,0,0,0,5,5]
+	},{
+		name: "Elven Spearman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [1,1,1,0,0,0,0,0]
+	},{
+		name: "Elven Spearman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [0,0,1,1,1,0,0,0]
+	},{
+		name: "Elven Spearman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [0,0,0,0,1,1,1,0]
+	},{
+		name: "Elven Spearman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [1,0,0,0,0,0,1,1]
+	},{
+		name: "Amara Silvershadow",
+		rank: "command",
+		type: "spear",
+		shield: 5,
+		attacks: [5,0,3,0,4,0,3,0]
+	},{
+		name: "Vanir Alfheim",
+		rank: "command",
+		type: "cavalry",
+		shield: 6,
+		attacks: [0,2,3,1,0,1,3,2]
+	},{
+		name: "Narcissus Foxglove",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,0,3,0,0,0,3,0],
+		shoots: 4,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]]
+	},{
+		name: "Eridia Lifrius",
+		rank: "command",
+		type: "infantry",
+		shield: 6,
+		attacks: [2,1,4,0,0,0,4,1]
+	},{
+		name: "Beladir Stormrider",
+		rank: "command",
+		type: "cavalry",
+		shield: 5,
+		attacks: [5,3,1,1,0,1,1,3]
+	}],
+	lizardmen: [{
+		name: "Kai'itza of Xhotl",
+		rank: "general",
+		type: "infantry",
+		shield: 7,
+		attacks: [4,0,4,0,0,0,4,0]
+	},{
+		name: "Quillshot",
+		rank: "elite",
+		type: "ranged",
+		shield: 4,
+		attacks: [3,0,1,1,1,1,1,0],
+		shoots: 3,
+		hits: [[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,2],[1,3]],
+		quantity: 4
+	},{
+		name: "Armoured Trike",
+		rank: "special",
+		type: "cavalry",
+		shield: 5,
+		attacks: [3,4,0,0,2,0,0,4],
+		quantity: 2
+	},{
+		name: "Crocodilian Brave",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [4,2,3,0,2,0,3,2],
+		quantity: 2
+	},{
+		name: "Leatherback",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [3,1,0,1,1,1,0,1],
+		quantity: 2
+	},{
+		name: "Shrine Guardian",
+		rank: "veteran",
+		type: "spear",
+		shield: 3,
+		attacks: [0,0,0,0,0,4,1,4],
+		quantity: 2
+	},{
+		name: "Shrine Guardian",
+		rank: "veteran",
+		type: "spear",
+		shield: 3,
+		attacks: [0,4,1,4,0,0,0,0],
+		quantity: 2
+	},{
+		name: "Compy Dasher",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [2,2,0,0,0,0,0,2]
+	},{
+		name: "Compy Dasher",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [0,2,2,2,0,0,0,0]
+	},{
+		name: "Compy Dasher",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [0,0,0,2,2,2,0,0]
+	},{
+		name: "Compy Dasher",
+		rank: "regular",
+		type: "cavalry",
+		shield: 3,
+		attacks: [0,0,0,0,0,2,2,2]
+	},{
+		name: "Lizardman Bulwark",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [2,1,2,0,0,0,0,0],
+		quantity: 2
+	},{
+		name: "Lizardman Bulwark",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [2,0,0,0,0,0,2,1],
+		quantity: 2
+	},{
+		name: "Cruor Sacrifice",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,5,0,0,0,0,0,5],
+		quantity: 2
+	},{
+		name: "Cruor Sacrifice",
+		rank: "recruit",
+		type: "berserker",
+		shield: 1,
+		attacks: [0,0,0,5,0,5,0,0],
+		quantity: 2
+	},{
+		name: "Skink Dartspitter",
+		rank: "recruit",
+		type: "ranged",
+		shield: 3,
+		attacks: [0,0,0,0,0,0,0,0],
+		shoots: 3,
+		hits: [[-1,1],[-1,2],[0,1],[0,2],[0,3],[1,1],[1,2]],
+		quantity: 4
+	},{
+		name: "Zund-Va the Brave",
+		rank: "command",
+		type: "spear",
+		shield: 6,
+		attacks: [0,4,1,2,0,2,1,4],
+	},{
+		name: "Chunkata Coldblood",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [5,2,3,0,0,0,3,2]
+	},{
+		name: "Dro'ka Klantos",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [0,0,3,4,1,4,3,0]
+	},{
+		name: "Huahua S'tonk",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [3,3,0,0,1,0,0,3],
+		shoots: 5,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]]
+	},{
+		name: "Que-thil Sor'lax",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [3,2,3,1,0,1,3,2]
+	}],
+	orcs: [{
+		name: "Orc Warhog",
+		rank: "elite",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,3,4,3,0,0,0,0],
+		quantity: 2
+	},{
+		name: "Orc Warhog",
+		rank: "elite",
+		type: "cavalry",
+		shield: 4,
+		attacks: [2,0,0,0,0,3,4,3],
+		quantity: 2
+	},{
+		name: "Goblin Bow Pest",
+		rank: "regular",
+		type: "ranged",
+		shield: 3,
+		attacks: [2,1,0,0,0,0,0,1],
+		shoots: 2,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		quantity: 4
+	},{
+		name: "Orc Deathbringer",
+		rank: "regular",
+		type: "berserker",
+		shield: 2,
+		attacks: [5,3,0,0,0,0,0,3],
+		quantity: 2
+	},{
+		name: "Orc Deathbringer",
+		rank: "regular",
+		type: "berserker",
+		shield: 2,
+		attacks: [0,0,0,3,5,3,0,0],
+		quantity: 2
+	},{
+		name: "Orc Butcher",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [4,3,3,0,0,0,3,3],
+		quantity: 2
+	},{
+		name: "Goblin Spider Rider",
+		rank: "special",
+		type: "cavalry",
+		shield: 4,
+		attacks: [3,2,2,1,0,1,2,2],
+		quantity: 2
+	},{
+		name: "Orc Ravager",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [3,2,1,0,0,0,0,5],
+		quantity: 2
+	},{
+		name: "Orc Ravager",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [3,5,0,0,0,0,1,2],
+		quantity: 2
+	},{
+		name: "Orc Catapult",
+		rank: "veteran",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,1,0,0,0,1,0],
+		shoots: 4,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		quantity: 2
+	},{
+		name: "Goblin Spikeman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [0,1,1,1,0,0,0,0],
+		quantity: 2
+	},{
+		name: "Goblin Spikeman",
+		rank: "recruit",
+		type: "spear",
+		shield: 3,
+		attacks: [0,0,0,0,0,1,1,1],
+		quantity: 2
+	},{
+		name: "Goblin Shanker",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [4,1,0,0,0,0,0,0]
+	},{
+		name: "Goblin Shanker",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,0,1,4,0,0,0]
+	},{
+		name: "Goblin Shanker",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,0,0,4,1,0,0]
+	},{
+		name: "Goblin Shanker",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [4,0,0,0,0,0,0,1]
+	},{
+		name: "Vanak Fleshripper",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [3,5,1,0,0,0,1,5]
+	},{
+		name: "Gonke Longtooth",
+		rank: "general",
+		type: "infantry",
+		shield: 6,
+		attacks: [5,5,0,0,0,0,0,5]
+	},{
+		name: "Ugluk Horsekiller",
+		rank: "command",
+		type: "spear",
+		shield: 6,
+		attacks: [0,4,2,0,0,0,2,4]
+	},{
+		name: "Kragdish Blackmaw",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [1,3,4,0,0,0,4,3]
+	},{
+		name: "Snafu Bighorn",
+		rank: "command",
+		type: "spear",
+		shield: 5,
+		attacks: [1,2,2,3,0,3,2,2]
+	},{
+		name: "Eruugor Bloodfist",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [3,0,5,1,0,1,5,0]
+	}],
+	dwarves: [{
+		name: "Dwarf Dowager",
+		rank: "recruit",
+		type: "berserker",
+		shield: 2,
+		attacks: [5,0,0,0,0,0,0,0]
+	},{
+		name: "Dwarf Dowager",
+		rank: "recruit",
+		type: "berserker",
+		shield: 2,
+		attacks: [0,0,5,0,0,0,0,0]
+	},{
+		name: "Dwarf Dowager",
+		rank: "recruit",
+		type: "berserker",
+		shield: 2,
+		attacks: [0,0,0,0,5,0,0,0]
+	},{
+		name: "Dwarf Dowager",
+		rank: "recruit",
+		type: "berserker",
+		shield: 2,
+		attacks: [0,0,0,0,0,0,5,0]
+	},{
+		name: "Dwarf Slugger",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [3,0,0,0,0,0,0,0],
+		quantity: 2
+	},{
+		name: "Dwarf Slugger",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,3,0,0,0,0,0]
+	},{
+		name: "Dwarf Slugger",
+		rank: "recruit",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,0,0,0,0,3,0]
+	},{
+		name: "Dwarf Berserker",
+		rank: "regular",
+		type: "berserker",
+		shield: 2,
+		attacks: [4,4,0,0,0,0,0,3]
+	},{
+		name: "Dwarf Berserker",
+		rank: "regular",
+		type: "berserker",
+		shield: 2,
+		attacks: [4,3,0,0,0,0,0,4]
+	},{
+		name: "Dwarf Sharpshooter",
+		rank: "regular",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,0,0,0,0,0,0],
+		shoots: 5,
+		hits: [[0,1],[0,2],[0,3]],
+		quantity: 2
+	},{
+		name: "Dwarf Axethrower",
+		rank: "elite",
+		type: "ranged",
+		shield: 4,
+		attacks: [3,3,0,0,0,0,0,3],
+		shoots: 3,
+		hits: [[-1,1],[-1,2],[0,1],[0,2],[1,1],[1,2]],
+		quantity: 2
 	}]
 };
 
