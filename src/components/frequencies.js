@@ -8,21 +8,21 @@ var Frequencies = React.createClass({
     render: function() {
         var a = _.reduce(this.props.frequencies,function(mem,freq,n){
             mem.count += freq;
-            mem.sum += freq*this.props.values[n];
+            mem.sum += freq*n;
             return mem;
         },{sum:0,count:0},this);
         return (
         	<table className='frequencytable'>
                 <tbody>
                     <tr>
-                        {[<td>{this.props.description}</td>].concat(this.props.values.map(function(val){
-                            return <td>{val}</td>;
-                        })).concat(<td>Avrg</td>)}
+                        {[<td>{this.props.description}</td>].concat(_.map(this.props.frequencies,function(freq,key){
+                            return <td>{key}</td>;
+                        })).concat(!_.isNaN(a.sum/a.count)?<td>Avrg</td>:[])}
                     </tr>
                     <tr>
-                        {[<td>frequency</td>].concat(this.props.frequencies.map(function(freq){
+                        {[<td>frequency</td>].concat(_.map(this.props.frequencies,function(freq){
                             return <td>{freq}</td>;
-                        })).concat(<td>{((a.sum/a.count)+'').substr(0,5)}</td>)}
+                        })).concat(!_.isNaN(a.sum/a.count)?<td>{((a.sum/a.count)+'').substr(0,5)}</td>:[])}
                     </tr>
                 </tbody>
             </table>

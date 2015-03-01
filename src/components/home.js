@@ -8,7 +8,7 @@ var Home = React.createClass({
     render: function() {
         return (
         	<div>
-            	<p>Welcome to the butt-ugly but functional Lords of War unit statistics tool!</p>
+            	<p>Welcome to the butt-ugly but functional <a href='http://lords-of-war.com'>Lords of War</a> unit statistics tool!</p>
 	        	<Interface units={this.props.units} />
 	        </div>
         );
