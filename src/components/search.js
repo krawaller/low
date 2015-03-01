@@ -18,7 +18,7 @@ var Search = React.createClass({
         return (
         	<div>
                 <h3>Selection</h3>
-                <p>Click an option to (de-)select it. Double-click to make it the only one selected in its row. Click an aspect to select all related options.</p>
+                <p className='searchinstruction'>Click an option to (de-)select it. Double-click to make it the only one selected in its row. Click an aspect to select all related options. When done, click the 'Search' button to update the result.</p>
                 <div>
                     {_.map(this.state,function(opts,name){
                         return <Options name={name} options={opts} updateOptions={this.updateOptions.bind(this,name)} />
