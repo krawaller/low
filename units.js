@@ -798,6 +798,142 @@ var units = {
 		type: "infantry",
 		shield: 5,
 		attacks: [3,0,5,1,0,1,5,0]
+	},{
+		name: "Orc Firestarter",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [1,1,0,0,0,0,0,1],
+		source: "expansion"
+	},{
+		name: "Orc Firestarter",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [0,1,1,1,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Orc Firestarter",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [0,0,0,1,1,1,0,0],
+		source: "expansion"
+	},{
+		name: "Orc Firestarter",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [0,0,0,0,0,1,1,1],
+		source: "expansion"
+	},{
+		name: "Murder of Crows",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [3,1,1,1,1,1,1,1],
+		source: "expansion"
+	},{
+		name: "Murder of Crows",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [1,1,3,1,1,1,1,1],
+		source: "expansion"
+	},{
+		name: "Murder of Crows",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [1,1,1,1,3,1,1,1],
+		source: "expansion"
+	},{
+		name: "Murder of Crows",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [1,1,1,1,1,1,3,1],
+		source: "expansion"
+	},{
+		name: "Blark Ironhide",
+		rank: "command",
+		type: "infantry",
+		shield: 7,
+		attacks: [1,1,1,0,5,0,1,1],
+		source: "expansion"
+	},{
+		name: "Xnurl Firebelly",
+		rank: "command",
+		type: "magic",
+		shield: 6,
+		magic: [1,1,1,1,1,1,1,1],
+		source: "expansion"
+	},{
+		name: "Frenzied Ogre",
+		rank: "champion",
+		type: "infantry",
+		shield: 6,
+		attacks: [0,3,0,3,0,3,0,3],
+		moves: [0,1,0,1,0,1,0,1],
+		monstrous: 3,
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Orc Wyrm Driver",
+		rank: "champion",
+		type: "cavalry",
+		shield: 6,
+		attacks: [5,3,1,0,1,0,1,3],
+		moves: [1,0,1,0,0,0,1,0],
+		monstrous: 2,
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Orc Wyrm Driver",
+		rank: "champion",
+		type: "cavalry",
+		shield: 6,
+		attacks: [1,3,1,0,5,0,1,3],
+		moves: [0,0,1,0,1,0,1,0],
+		monstrous: 2,
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Orc Bloodskin",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
+		attacks: [0,5,3,1,0,0,0,0],
+		moves: [0,1,1,1,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Orc Bloodskin",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
+		attacks: [0,0,0,0,0,1,3,5],
+		moves: [0,0,0,0,0,1,1,1],
+		source: "expansion"
+	},{
+		name: "Orc Bullwhip",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,4,0,0,0,0,0,4],
+		moves: [1,0,0,0,0,0,0,0],
+		shoots: 5,
+		hits: [[-1,2],[-1,3],[0,2],[0,3],[1,2],[1,3]],
+		source: "expansion"
+	},{
+		name: "Orc Bullwhip",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,0,4,4,4,4,4],
+		moves: [0,0,0,0,1,0,0,0],
+		shoots: 5,
+		hits: [[-1,-2],[-1,-3],[0,-2],[0,-3],[1,-2],[1,-3]],
+		source: "expansion"
 	}],
 	dwarves: [{
 		name: "Dwarf Dowager",
@@ -872,13 +1008,273 @@ var units = {
 		shoots: 3,
 		hits: [[-1,1],[-1,2],[0,1],[0,2],[1,1],[1,2]],
 		quantity: 2
+	},{
+		name: "Dwarf Axethrower",
+		rank: "elite",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,0,3,3,3,0,0],
+		shoots: 3,
+		hits: [[-1,-1],[-1,-2],[0,-1],[0,-2],[1,-1],[1,-2]],
+		quantity: 2
+	},{
+		name: "Dwarf Impaler",
+		rank: "regular",
+		type: "spear",
+		shield: 3,
+		attacks: [1,1,1,1,0,0,0,1]
+	},{
+		name: "Dwarf Impaler",
+		rank: "regular",
+		type: "spear",
+		shield: 3,
+		attacks: [0,1,1,1,1,1,0,0]
+	},{
+		name: "Dwarf Impaler",
+		rank: "regular",
+		type: "spear",
+		shield: 3,
+		attacks: [0,0,0,1,1,1,1,1]
+	},{
+		name: "Dwarf Impaler",
+		rank: "regular",
+		type: "spear",
+		shield: 3,
+		attacks: [1,1,0,0,0,1,1,1]
+	},{
+		name: "Dwarf Rock Hound",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [2,1,0,1,2,3,4,4]
+	},{
+		name: "Dwarf Rock Hound",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [2,4,4,3,2,1,0,1]
+	},{
+		name: "Dwarf Ballista",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,2,0,0,0,0,0,2],
+		shoots: 4,
+		hits: [[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,2],[1,3]],
+		quantity: 2
+	},{
+		name: "Dwarf Marauder",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [4,2,1,0,0,0,0,0]
+	},{
+		name: "Dwarf Marauder",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [4,0,0,0,0,0,1,2]
+	},{
+		name: "Dwarf Beastslayer",
+		rank: "veteran",
+		type: "spear",
+		shield: 4,
+		attacks: [3,2,0,0,0,0,0,2]
+	},{
+		name: "Dwarf Beastslayer",
+		rank: "veteran",
+		type: "spear",
+		shield: 4,
+		attacks: [0,2,3,2,0,0,0,0]
+	},{
+		name: "Dwarf Beastslayer",
+		rank: "veteran",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,0,2,3,2,0,0]
+	},{
+		name: "Dwarf Beastslayer",
+		rank: "veteran",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,0,0,0,2,3,2]
+	},{
+		name: "Ivor the Mad",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,2,1,0,0,0,1,2],
+		shoots: 5,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]]
+	},{
+		name: "Jaeger Drakesbane",
+		rank: "command",
+		type: "spear",
+		shield: 5,
+		attacks: [0,2,1,4,1,4,1,2]
+	},{
+		name: "Gordona Ironhelm",
+		rank: "command",
+		type: "infantry",
+		shield: 6,
+		attacks: [4,0,4,0,4,0,4,0]
+	},{
+		name: "Krod Klouthammer",
+		rank: "general",
+		type: "infantry",
+		shield: 7,
+		attacks: [5,0,0,0,0,0,3,4]
+	},{
+		name: "Deadeye Jones",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,3,0,0,0,0,0,3],
+		shoots: 5,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]]
+	},{
+		name: "Mungo Lancerammer",
+		rank: "command",
+		type: "spear",
+		shield: 6,
+		attacks: [4,2,2,0,0,0,2,2]
+	},{
+		name: "Dwarf Organ Gun",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [3,2,0,0,0,0,0,2],
+		shoots: 4,
+		hits: [[-2,2],[-2,3],[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3],[2,2],[3,2]],
+		source: "expansion"
+	},{
+		name: "Dwarf Organ Gun",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,0,2,3,2,0,0],
+		shoots: 4,
+		hits: [[-2,-2],[-2,-3],[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3],[2,-2],[3,-2]],
+		source: "expansion"
+	},{
+		name: "Dwarf Shield Maiden",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [1,1,1,1,0,0,0,1],
+		source: "expansion"
+	},{
+		name: "Dwarf Shield Maiden",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [1,1,0,0,0,1,1,1],
+		source: "expansion"
+	},{
+		name: "Iron Walker",
+		rank: "champion",
+		type: "berserker",
+		shield: 6,
+		attacks: [2,0,2,4,0,4,2,0],
+		monstrous: 2,
+		source: "expansion"
+	},{
+		name: "Iron Walker",
+		rank: "champion",
+		type: "berserker",
+		shield: 6,
+		attacks: [0,4,2,0,2,0,2,4],
+		monstrous: 2,
+		source: "expansion"
+	},{
+		name: "Forge Troll",
+		rank: "champion",
+		type: "infantry",
+		shield: 7,
+		monstrous: 2,
+		attacks: [4,0,3,0,2,0,3,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion"
+	},{
+		name: "Forge Troll",
+		rank: "champion",
+		type: "infantry",
+		shield: 7,
+		monstrous: 2,
+		attacks: [2,0,3,0,4,0,3,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion"
+	},{
+		name: "Thalin Haddin",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [1,1,0,1,1,1,0,1],
+		shoots: 5,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		source: "expansion"
+	},{
+		name: "Ragar Icebone",
+		rank: "command",
+		type: "infantry",
+		shield: 6,
+		attacks: [5,4,3,0,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Mountain Hawk",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [2,2,2,0,0,0,2,2],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Mountain Hawk",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [0,0,2,2,2,2,2,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Dwarf Arcanist",
+		rank: "private",
+		type: "magic",
+		shield: 4,
+		magic: [1,1,0,0,0,0,0,1],
+		shoots: 2,
+		hits: [[-1,1],[-1,2],[0,1],[0,2],[1,1],[1,2]],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Dwarf Arcanist",
+		rank: "private",
+		type: "magic",
+		shield: 4,
+		magic: [0,0,0,1,1,1,0,0],
+		shoots: 2,
+		hits: [[-1,-1],[-1,-2],[0,-1],[0,-2],[1,-1],[1,-2]],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Santa Claus",
+		rank: "general",
+		type: "infantry",
+		shield: 6,
+		attacks: [1,1,5,1,0,1,5,1],
+		source: "special"
 	}]
 };
 
 module.exports = _.reduce(units,function(list,arr,armyname){
 	return _.reduce(arr,function(list,def,x){
 		for(var i=0;i<(def.quantity||1);i++){
-			list.push(_.omit(_.extend(def,{army:armyname}),"quantity"));
+			list.push(_.omit(_.extend(def,{
+				army:armyname,
+				arrows: _.reduce(def.attacks,function(count,strength){ return count+Math.min(strength,1);},0)
+			}),"quantity"));
 		}
 		return list;
 	},list);
