@@ -22,8 +22,10 @@ _.each([undead,templars,dwarves,orcs,lizardmen,elves],function(army){
 			record.total[dir]+=strength;
 		});
 		record.arrows += unit.arrows;
+		record.highest[unit.highest]++;
+		record.shoots[unit.shoots||0]++;
 		return record;
-	},{total:[0,0,0,0,0,0,0,0],arrows:0});
+	},{total:[0,0,0,0,0,0,0,0],highest: [0,0,0,0,0,0,0], arrows:0, shoots: [0,0,0,0,0,0,0]});
 	console.log("Shield counts:",shielddata);
 	console.log("Attack counts:",attackdata);
 });

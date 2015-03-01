@@ -1,0 +1,96 @@
+.attackgrid {
+	font-size: 10px;
+	font-family: "monospace";
+	border: 1px solid #555;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.move {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+
+.attack {
+	box-sizing: border-box;
+	height: 10px;
+	width: 10px;
+}
+
+.hitgrid {
+	border: 1px solid #555;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hitgrid td div {
+	height: 3px;
+	width: 3px;
+}
+
+.canhit { background-color: red; }
+.home { background-color: blue; }
+
+
+.frequencytable {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	display: inline-block;
+}
+.frequencytable td {
+	min-width: 20px;
+	border: 1px solid #777;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.unittable {
+	font-family: sans-serif;
+	font-size: 12px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.unittable > * > tr > * {
+	padding: 1px;
+}
+
+.unit td:first-child {
+	text-align: left;
+}
+
+.unit td {
+	text-align: center;
+}
+
+thead {
+	background-color: #333;
+	color: white;
+}
+
+.option {
+	padding: 3px;
+	background-color: #999;
+	cursor: pointer;
+}
+
+.optionname {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.option.selected {
+	background-color: #92C687;
+}
+
+.optionlist {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 0.5em;
+}

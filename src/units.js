@@ -1145,7 +1145,7 @@ var units = {
 		shield: 5,
 		attacks: [3,2,0,0,0,0,0,2],
 		shoots: 4,
-		hits: [[-2,2],[-2,3],[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3],[2,2],[3,2]],
+		hits: [[-2,2],[-2,3],[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3],[2,2],[2,3]],
 		source: "expansion"
 	},{
 		name: "Dwarf Organ Gun",
@@ -1154,7 +1154,7 @@ var units = {
 		shield: 5,
 		attacks: [0,0,0,2,3,2,0,0],
 		shoots: 4,
-		hits: [[-2,-2],[-2,-3],[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3],[2,-2],[3,-2]],
+		hits: [[-2,-2],[-2,-3],[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3],[2,-2],[2,-3]],
 		source: "expansion"
 	},{
 		name: "Dwarf Shield Maiden",
@@ -1270,12 +1270,17 @@ var units = {
 
 module.exports = _.reduce(units,function(list,arr,armyname){
 	return _.reduce(arr,function(list,def,x){
-		for(var i=0;i<(def.quantity||1);i++){
+		_.times(def.quantity||1,function(){
 			list.push(_.omit(_.extend(def,{
-				army:armyname,
-				arrows: _.reduce(def.attacks,function(count,strength){ return count+Math.min(strength,1);},0)
+				id: "id"+list.length,
+				army: armyname,
+				source: def.source || "base",
+				directions: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
+				highest: Math.max.apply(Math,def.attacks || [0,0]),
+				moving: def.moves ? "yes" : "no",
+				ismonstrous: def.monstrous ? "yes" : "no"
 			}),"quantity"));
-		}
+		});
 		return list;
 	},list);
 },[]);
