@@ -22,14 +22,11 @@ var Options = React.createClass({
     },
     render: function() {
         return (
-        	<div className='optionlist'>
-                <span className='optionname' onClick={this.all}>{this.props.name}: </span>
-                <span className='optionselections'>
-                    {_.map(this.props.options,function(selected,name){
-                        return <span onClick={this.flip.bind(this,name)} onDoubleClick={this.alone.bind(this,name)} className={'option '+(selected?'selected':'')}>{name}</span>;
-                    },this)}
-                </span>
-	        </div>
+        	<tr className='optionlist'>
+                {[<td className='optionname' onClick={this.all}>{this.props.name}: </td>].concat(_.map(this.props.options,function(selected,name){
+                        return <td onClick={this.flip.bind(this,name)} onDoubleClick={this.alone.bind(this,name)} className={'option '+(selected?'selected':'')}>{name}</td>;
+                },this))}
+	        </tr>
         );
     }
 });

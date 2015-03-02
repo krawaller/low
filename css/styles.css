@@ -89,9 +89,15 @@ thead {
 	cursor: pointer;
 }
 
+.searchtable {
+	text-align: center;
+}
+
 .optionname {
 	cursor: pointer;
-	text-decoration: underline;
+	background-color: #C6B89F;
+	text-align: right;
+	font-weight: bold;
 }
 
 .option.selected {
