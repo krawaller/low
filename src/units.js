@@ -893,7 +893,7 @@ var units = {
 		rank: "champion",
 		type: "cavalry",
 		shield: 6,
-		attacks: [1,3,1,0,5,0,1,3],
+		attacks: [1,0,1,3,5,3,1,0],
 		moves: [0,0,1,0,1,0,1,0],
 		monstrous: 2,
 		source: "expansion",

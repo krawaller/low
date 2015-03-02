@@ -38,7 +38,7 @@ var Interface = React.createClass({
                 {list.length && <div>
             	<h3>Aggregation</h3>
                 <Aggregation units={list} />
-                <h3>List of the {list.length} matched units</h3>
+                <h3>List of the {list.length} matched units ({Math.round(100*list.length/this.props.units.length)}% of all {this.props.units.length})</h3>
 	        	<List units={list} /></div> }
 	        </div>
         );

@@ -24,6 +24,11 @@ var Frequencies = React.createClass({
                             return <td>{freq}</td>;
                         })).concat(!_.isNaN(a.sum/a.count)?<td className='frequencyaverage'>{((a.sum/a.count)+'').substr(0,5)}</td>:[])}
                     </tr>
+                    <tr>
+                        {[<td>percentage</td>].concat(_.map(this.props.frequencies,function(freq){
+                            return <td>{Math.round(100*freq/a.count)}</td>;
+                        })).concat(!_.isNaN(a.sum/a.count)?<td></td>:[])}
+                    </tr>
                 </tbody>
             </table>
         );
