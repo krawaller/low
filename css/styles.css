@@ -59,6 +59,12 @@
 	font-size: 12px;
 }
 
+.frequencytable tr:first-child td:first-child, .frequencyaverage {
+	font-weight: bold;
+}
+
+
+
 .unittable {
 	font-family: sans-serif;
 	font-size: 12px;
