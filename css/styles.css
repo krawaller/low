@@ -1,3 +1,23 @@
+
+h3 {
+	background-image: url(../img/spear.png);
+	height: 30px;
+	width: 800px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;	
+	text-align: center;
+	color: #43160F;
+	font-family: 'Quattrocento', serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.wrapper {
+	max-width: 800px;
+	margin: 1em auto;
+}
+
 .searchinstruction {
 	font-style: italic;
 	font-size: 0.9em;
@@ -116,6 +136,10 @@ thead {
 
 .searchtable {
 	text-align: center;
+}
+
+.searchtable td {
+	padding: 2px 5px;
 }
 
 .optionname {

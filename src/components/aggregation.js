@@ -36,8 +36,6 @@ var Aggregation = React.createClass({
         data.diraverages = _.map(_.range(0,8),function(n){ return data.dirtotals[n]/(data.dircounts[n]||1); });
         data.dirpercentage = _.map(_.range(0,8),function(n){ return 100*data.dircounts[n]/army.length; });
 
-        console.log("What the heck?!",data);
-
         return (
             <div>
                 <Frequencies description='army' frequencies={data.armies} />{' '}
@@ -48,8 +46,8 @@ var Aggregation = React.createClass({
                 <Frequencies description='directions' frequencies={data.directions} />{' '}
                 <br/>
                 <Reticule description='avrg' dirs={data.diraverages} />{' '}
-                <Reticule description='has %' dirs={data.dirpercentage} />{' '}
                 <Reticule description='freq' dirs={data.dircounts} />{' '}
+                <Reticule description='%' dirs={data.dirpercentage} />{' '}
             </div>
         )
     }

@@ -36,8 +36,10 @@ var Interface = React.createClass({
         	<div>
                 <Search options={this.state.options} submit={this.updateCriteria}/>
                 {list.length && <div>
+                <div className='divider'/>
             	<h3>Aggregation</h3>
                 <Aggregation units={list} />
+                <div className='divider'/>
                 <h3>List of the {list.length} matched units ({Math.round(100*list.length/this.props.units.length)}% of all {this.props.units.length})</h3>
 	        	<List units={list} /></div> }
 	        </div>
