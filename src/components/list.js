@@ -19,8 +19,8 @@ var List = React.createClass({
         var outof = this.props.outof, by = this.state.by, mod = this.state.down ? 1 : -1, list = this.props.units.sort(function(u1,u2){
             return (u1[by] > u2[by] ? -1 : 1)*mod;
         });
-        var printTH = function(prop){
-            return <th onClick={this.sortBy.bind(this,prop)}>{prop[0].toUpperCase()+prop.substr(1,666)}{prop===by?(this.state.down?'↑':'↓'):' '}</th>
+        var n=0, printTH = function(prop){
+            return <th key={n++} onClick={this.sortBy.bind(this,prop)}>{prop[0].toUpperCase()+prop.substr(1,666)}{prop===by?(this.state.down?'↑':'↓'):' '}</th>
         }.bind(this);
         return (
             <div>
@@ -48,7 +48,7 @@ These are the {list.length} matched units ({Math.round(100*list.length/outof)}% 
                     </thead>
                     <tbody>
                 		{this.props.units.map(function(unit){
-                			return <Unit unit={unit}/>;
+                			return <Unit key={unit.id} unit={unit}/>;
                 		})}
                     </tbody>
             	</table>
