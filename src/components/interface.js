@@ -12,7 +12,7 @@ var Interface = React.createClass({
         return {
             options: {
                 army: {dwarves:true,elves:true,orcs:true,templars:true,lizardmen:true,undead:true},
-                source: {base:true,expansion:true,special:true},
+                source: {base:true,expansion:true,promo:true},
                 type: {infantry:true,cavalry:true,magic:true,spear:true,flying:true,berserker:true,ranged:true},
                 rank: {recruit:true,"private":true,regular:true,veteran:true,elite:true,champion:true,special:true,command:true,general:true},
                 shield: {1:true,2:true,3:true,4:true,5:true,6:true,7:true,8:true,9:true},
@@ -36,12 +36,9 @@ var Interface = React.createClass({
         	<div>
                 <Search options={this.state.options} submit={this.updateCriteria}/>
                 {list.length && <div>
-                <div className='divider'/>
             	<h3>Aggregation</h3>
                 <Aggregation units={list} />
-                <div className='divider'/>
-                <h3>List of the {list.length} matched units ({Math.round(100*list.length/this.props.units.length)}% of all {this.props.units.length})</h3>
-	        	<List units={list} /></div> }
+	        	<List units={list} outof={this.props.units.length} /></div> }
 	        </div>
         );
     }

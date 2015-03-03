@@ -1264,7 +1264,7 @@ var units = {
 		type: "infantry",
 		shield: 6,
 		attacks: [1,1,5,1,0,1,5,1],
-		source: "special"
+		source: "promo"
 	}]
 };
 

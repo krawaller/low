@@ -17,6 +17,8 @@ var Unit = React.createClass({
             	<td>{unit.type}</td>
             	<td>{unit.shield}</td>
             	<td><Attack unit={unit}/></td>
+                <td>{unit.highest}</td>
+                <td>{unit.directions}</td>
             	<td>{unit.hits ? <Hits unit={unit}/> : ''}</td>
             	<td>{unit.shoots}</td>
             	<td>{unit.monstrous}</td>
