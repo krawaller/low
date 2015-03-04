@@ -73,16 +73,24 @@ h3 {
 	border: none;
 }
 
-.hitgrid {
+table.hitgrid {
 	border: 1px solid #555;
 	text-align: center;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
+.hitgrid td {
+	height: 4px;
+	width: 4px;
+	position: relative;
+}
+
 .hitgrid td div {
-	height: 3px;
-	width: 3px;
+	height: 4px;
+	width: 4px;
+	top: 0;
+	left: 0;
 }
 
 .canhit { background-color: red; }
