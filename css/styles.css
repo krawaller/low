@@ -134,6 +134,10 @@ table.hitgrid {
 	padding: 1px;
 }
 
+.unit {
+	padding: 1px;
+}
+
 .unit td:first-child {
 	text-align: left;
 	padding-left: 3px;
