@@ -12,7 +12,7 @@ var Home = React.createClass({
             	<p className='instruction'>
 Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid tool! Here you can see <strong>statistics</strong> for all units or subsets of units, and/or <strong>create mercenary decks</strong> and see stats for the created decks.
     </p><p className='instruction'>
-If something isn't working as it should or you have an idea for improvement, <a href='mailto:david@krawaller.se!'>drop me a line</a>!
+If something isn't working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
 	        </div>
         );
