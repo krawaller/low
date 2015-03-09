@@ -4,7 +4,7 @@ var React = require('react'),
     Router = require('react-router'),
     _ = require('lodash');
 
-var Options = React.createClass({
+var OptionRow = React.createClass({
     flip: function(optionname,e){
         this.props.updateOptions(_.extend({},this.props.options,_.object([optionname],[!this.props.options[optionname]])));
         e.preventDefault();
@@ -23,12 +23,12 @@ var Options = React.createClass({
     render: function() {
         return (
         	<tr className='optionlist'>
-                {[<td className='optionname' onClick={this.all}>{this.props.name}: </td>].concat(_.map(this.props.options,function(selected,name){
-                        return <td onClick={this.flip.bind(this,name)} onDoubleClick={this.alone.bind(this,name)} className={'option '+(selected?'selected':'')}>{name}</td>;
+                {[<td key='optname' className='optionname' onClick={this.all}>{this.props.name}: </td>].concat(_.map(this.props.options,function(selected,name){
+                        return <td key={name} onClick={this.flip.bind(this,name)} onDoubleClick={this.alone.bind(this,name)} className={'option '+(selected?'selected':'')}>{name}</td>;
                 },this))}
 	        </tr>
         );
     }
 });
 
-module.exports = Options;
+module.exports = OptionRow;

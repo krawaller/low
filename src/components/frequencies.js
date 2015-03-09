@@ -15,19 +15,19 @@ var Frequencies = React.createClass({
         	<table className='frequencytable'>
                 <tbody>
                     <tr>
-                        {[<td>{this.props.description}</td>].concat(_.map(this.props.frequencies,function(freq,key){
-                            return <td>{key}</td>;
-                        })).concat(!_.isNaN(a.sum/a.count)?<td>Avrg</td>:[])}
+                        {[<td key='desc'>{this.props.description}</td>].concat(_.map(this.props.frequencies,function(freq,key){
+                            return <td key={key}>{key}</td>;
+                        })).concat(!_.isNaN(a.sum/a.count)?<td key='avrg'>Avrg</td>:[])}
                     </tr>
                     <tr>
-                        {[<td>frequency</td>].concat(_.map(this.props.frequencies,function(freq){
-                            return <td>{freq}</td>;
-                        })).concat(!_.isNaN(a.sum/a.count)?<td className='frequencyaverage'>{((a.sum/a.count)+'').substr(0,5)}</td>:[])}
+                        {[<td key='freq'>frequency</td>].concat(_.map(this.props.frequencies,function(freq,n){
+                            return <td key={n}>{freq}</td>;
+                        })).concat(!_.isNaN(a.sum/a.count)?<td key='avrg' className='frequencyaverage'>{((a.sum/a.count)+'').substr(0,5)}</td>:[])}
                     </tr>
                     <tr>
-                        {[<td>percentage</td>].concat(_.map(this.props.frequencies,function(freq){
-                            return <td>{Math.round(100*freq/a.count)}</td>;
-                        })).concat(!_.isNaN(a.sum/a.count)?<td></td>:[])}
+                        {[<td key='pc'>percentage</td>].concat(_.map(this.props.frequencies,function(freq,n){
+                            return <td key={n}>{Math.round(100*freq/a.count)}</td>;
+                        })).concat(!_.isNaN(a.sum/a.count)?<td key='avrg'></td>:[])}
                     </tr>
                 </tbody>
             </table>

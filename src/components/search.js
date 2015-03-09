@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 
 var React = require('react'),
-    Router = require('react-router'),
-    Options = require('./options');
+    RouOptionRowter = require('react-router'),
+    OptionRow = require('./optionrow');
 
 var Search = React.createClass({
     getInitialState: function(){
@@ -17,11 +17,10 @@ var Search = React.createClass({
     render: function() {
         return (
         	<div>
-                <h3>Selection</h3>
                 <p className='instruction'>Click an option to (de-)select it. Double-click to make it the only one selected in its row. Click an aspect to select all related options. When done, click the 'Search' button to update the result.</p>
                 <table className='searchtable'>
                     {_.map(this.state,function(opts,name){
-                        return <Options name={name} options={opts} updateOptions={this.updateOptions.bind(this,name)} />
+                        return <OptionRow key={name} name={name} options={opts} updateOptions={this.updateOptions.bind(this,name)} />
                     },this)}
                 </table>
                 <button className='searchbutton' onClick={this.submit}>Search</button>

@@ -1,3 +1,24 @@
+.nav {
+	height: 30px;
+	background: url(../img/layer-red.png);
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.nav a {
+	margin-left: 2em;
+	color: #ffda9d;
+	font-family: 'Quattrocento', serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.nav a.active {
+	color: #ffda52;
+	text-shadow: 0 0 10px #ffda52;
+}
 
 h3 {
 	background-image: url(../img/spear.png);
@@ -73,11 +94,16 @@ h3 {
 	border: none;
 }
 
+.reticulegrid tr:nth-child(2) td:nth-child(2) {
+	font-weight: bold;
+}
+
 table.hitgrid {
 	border: 1px solid #555;
 	text-align: center;
 	border-collapse: collapse;
 	border-spacing: 0;
+	margin: 1px;
 }
 
 .hitgrid td {
@@ -124,10 +150,16 @@ table.hitgrid {
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-left: 1em;
+	margin-bottom: 1em;
 }
 
 .unittable th {
 	cursor: pointer;
+}
+
+.armytable thead tr th, .armytable tbody tr td {
+	padding: 3px;
+	text-align: center;
 }
 
 .unittable > * > tr > * {
@@ -140,11 +172,11 @@ table.hitgrid {
 
 .unit td:first-child {
 	text-align: left;
-	padding-left: 3px;
 }
 
-.unit td {
+.unit > td {
 	text-align: center;
+	padding: 1px 3px;
 }
 
 thead {

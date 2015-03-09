@@ -106,14 +106,14 @@ var units = {
 	},{
 		name: "Templar Sanctifier",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [5,2,0,0,0,0,0,2],
 		quantity: 3
 	},{
 		name: "Templar Sanctifier",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,0,0,2,5,2,0,0]
 	},{
@@ -428,25 +428,25 @@ var units = {
 	},{
 		name: "Elven Puresoul",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,5,5,0,0,0,0,0]
 	},{
 		name: "Elven Puresoul",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,0,5,5,0,0,0,0]
 	},{
 		name: "Elven Puresoul",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,0,0,0,0,5,5,0]
 	},{
 		name: "Elven Puresoul",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,0,0,0,0,0,5,5]
 	},{
@@ -597,14 +597,14 @@ var units = {
 	},{
 		name: "Cruor Sacrifice",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,5,0,0,0,0,0,5],
 		quantity: 2
 	},{
 		name: "Cruor Sacrifice",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 1,
 		attacks: [0,0,0,5,0,5,0,0],
 		quantity: 2
@@ -676,14 +676,14 @@ var units = {
 	},{
 		name: "Orc Deathbringer",
 		rank: "regular",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [5,3,0,0,0,0,0,3],
 		quantity: 2
 	},{
 		name: "Orc Deathbringer",
 		rank: "regular",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [0,0,0,3,5,3,0,0],
 		quantity: 2
@@ -934,29 +934,44 @@ var units = {
 		shoots: 5,
 		hits: [[-1,-2],[-1,-3],[0,-2],[0,-3],[1,-2],[1,-3]],
 		source: "expansion"
+	},{
+		name: "Urgoth Skullsplitter",
+		rank: "command",
+		type: "berserk",
+		shield: 6,
+		attacks: [0,0,1,5,0,5,1,0],
+		source: "promo",
+	},{
+		name: "Fatty Loudmouth",
+		rank: "command",
+		type: "bearer",
+		shield: 9,
+		attacks: [2,1,0,1,1,1,0,1],
+		moves: [1,0,0,0,1,0,0,0],
+		source: "promo"
 	}],
 	dwarves: [{
 		name: "Dwarf Dowager",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [5,0,0,0,0,0,0,0]
 	},{
 		name: "Dwarf Dowager",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [0,0,5,0,0,0,0,0]
 	},{
 		name: "Dwarf Dowager",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [0,0,0,0,5,0,0,0]
 	},{
 		name: "Dwarf Dowager",
 		rank: "recruit",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [0,0,0,0,0,0,5,0]
 	},{
@@ -981,13 +996,13 @@ var units = {
 	},{
 		name: "Dwarf Berserker",
 		rank: "regular",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [4,4,0,0,0,0,0,3]
 	},{
 		name: "Dwarf Berserker",
 		rank: "regular",
-		type: "berserker",
+		type: "berserk",
 		shield: 2,
 		attacks: [4,3,0,0,0,0,0,4]
 	},{
@@ -1173,7 +1188,7 @@ var units = {
 	},{
 		name: "Iron Walker",
 		rank: "champion",
-		type: "berserker",
+		type: "berserk",
 		shield: 6,
 		attacks: [2,0,2,4,0,4,2,0],
 		monstrous: 2,
@@ -1181,7 +1196,7 @@ var units = {
 	},{
 		name: "Iron Walker",
 		rank: "champion",
-		type: "berserker",
+		type: "berserk",
 		shield: 6,
 		attacks: [0,4,2,0,2,0,2,4],
 		monstrous: 2,
@@ -1265,6 +1280,21 @@ var units = {
 		shield: 6,
 		attacks: [1,1,5,1,0,1,5,1],
 		source: "promo"
+	},{
+		name: "Bon Bon the Bear",
+		rank: "command",
+		type: "spear",
+		shield: 6,
+		attacks: [0,0,2,2,4,2,2,0],
+		source: "promo"
+	},{
+		name: "Fodrin Rockbeard",
+		rank: "command",
+		type: "bearer",
+		shield: 9,
+		attacks: [2,0,2,0,1,0,2,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "promo"
 	}]
 };
 
@@ -1276,11 +1306,14 @@ module.exports = _.reduce(units,function(list,arr,armyname){
 				army: armyname,
 				source: def.source || "base",
 				directions: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
-				highest: Math.max.apply(Math,def.attacks || [0,0]),
+				strongest: Math.max.apply(Math,def.attacks || [0,0]),
 				moving: def.moves ? "yes" : "no",
-				ismonstrous: def.monstrous ? "yes" : "no"
+				ismonstr: def.monstrous ? "yes" : "no"
 			}),"quantity"));
 		});
 		return list;
 	},list);
-},[]);
+},[]).reduce(function(ret,unit){
+	ret[unit.id] = unit;
+	return ret;
+},{});
