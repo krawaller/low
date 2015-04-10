@@ -133,8 +133,8 @@ table.hitgrid {
 }
 
 .hitgrid td div {
-	height: 2px;
-	width: 2px;
+	height: 2.01px;
+	width: 2.01px;
 	top: 0;
 	left: 0;
 }
