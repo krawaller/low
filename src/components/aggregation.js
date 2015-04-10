@@ -24,6 +24,7 @@ var Aggregation = React.createClass({
             record.shields[unit.shield]++;
             record.ismonstr[unit.ismonstr]++;
             record.moving[unit.moving]++;
+            record.source[unit.source]++;
             return record;
         },{
             shields:[0,0,0,0,0,0,0,0,0,0],
@@ -36,7 +37,8 @@ var Aggregation = React.createClass({
             ranks: {recruit:0,"private":0,regular:0,veteran:0,elite:0,champion:0,special:0,command:0,general:0},
             types: {infantry:0,cavalry:0,magic:0,spear:0,flying:0,berserk:0,ranged:0,bearer:0},
             ismonstr: {yes:0,no:0},
-            moving: {yes:0,no:0}
+            moving: {yes:0,no:0},
+            source: {core:0,expansion:0,promo:0}
         });
         data.diraverages = _.map(_.range(0,8),function(n){ return data.dirtotals[n]/(data.dircounts[n]||1); });
         data.dirpercentage = _.map(_.range(0,8),function(n){ return 100*data.dircounts[n]/total; });
@@ -51,6 +53,7 @@ var Aggregation = React.createClass({
                 <Frequencies description='directions' frequencies={data.directions} />{' '}
                 <Frequencies description='moving' frequencies={data.moving} />{' '}
                 <Frequencies description='ismonstr' frequencies={data.ismonstr} />{' '}
+                <Frequencies description='source' frequencies={data.source} />{' '}
                 <br/>
                 <Reticule description='avrg' dirs={data.diraverages} />{' '}
                 <Reticule description='freq' dirs={data.dircounts} />{' '}

@@ -1351,7 +1351,7 @@ module.exports = _.reduce(units,function(list,arr,armyname){
 			list.push(_.omit(_.extend(def,{
 				id: "id"+list.length,
 				army: armyname,
-				source: def.source || "base",
+				source: def.source || "core",
 				directions: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
 				strongest: Math.max.apply(Math,def.attacks || [0,0]),
 				moving: def.moves ? "yes" : "no",
