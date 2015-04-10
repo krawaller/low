@@ -18,19 +18,19 @@ var Unit = React.createClass({
         //army && console.log("UNIT",unit.id,"ARMY",army,"PART",army[unit.id])
         return (
             <tr className='unit' key={unit.id}> {[
-            	<td key='name'>{unit.name}</td>,
-            	<td key='army'>{unit.army}</td>,
-            	<td key='source'>{unit.source}</td>,
-            	<td key='rank'>{unit.rank}</td>,
-            	<td key='type'>{unit.type}</td>,
-            	<td key='shield'>{unit.shield}</td>,
-            	<td key='atck'><Attack unit={unit}/></td>,
-                <td key='strng'>{unit.strongest}</td>,
-                <td key='dir'>{unit.directions}</td>,
-            	<td key='hits'>{unit.hits ? <Hits unit={unit}/> : ''}</td>,
-            	<td key='shoo'>{unit.shoots}</td>,
-            	<td key='mons'>{unit.monstrous}</td>,
-            ].concat(army && !army[unit.id] ? <td key='but'><button onClick={this.add}>Add</button></td> : army && army[unit.id] ? <td key='but'><button onClick={this.remove}>Remove</button></td> : [])}</tr>
+            	<td key='name'><div>{unit.name}</div></td>,
+            	<td key='army'><div>{unit.army}</div></td>,
+            	<td key='source'><div>{unit.source}</div></td>,
+            	<td key='rank'><div>{unit.rank}</div></td>,
+            	<td key='type'><div>{unit.type}</div></td>,
+            	<td key='shield'><div>{unit.shield}</div></td>,
+            	<td key='atck'><div><Attack unit={unit}/></div></td>,
+                <td key='strng'><div>{unit.strongest}</div></td>,
+                <td key='dir'><div>{unit.directions}</div></td>,
+            	<td key='hits'><div>{unit.hits ? <Hits unit={unit}/> : ''}</div></td>,
+            	<td key='shoo'><div>{unit.shoots}</div></td>,
+            	<td key='mons'><div>{unit.monstrous}</div></td>,
+            ].concat(army && !army[unit.id] ? <td key='but'><div><button onClick={this.add}>Add</button></div></td> : army && army[unit.id] ? <td key='but'><div><button onClick={this.remove}>Remove</button></div></td> : [])}</tr>
         );
     }
 });

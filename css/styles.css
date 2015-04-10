@@ -1,3 +1,22 @@
+.changedrow-enter td > div {
+  max-height: 1px;
+  transition: max-height .5s ease-in;
+}
+
+.changedrow-enter.changedrow-enter-active td > div {
+  max-height: 50px;
+}
+
+.changedrow-leave td > div {
+  max-height: 50px;
+  transition: max-height .5s ease-in;
+}
+
+.changedrow-leave.changedrow-leave-active td > div {
+  max-height: 1px;
+}
+
+
 .nav {
 	height: 30px;
 	background: url(../img/layer-red.png);
@@ -102,19 +121,20 @@ table.hitgrid {
 	border: 1px solid #555;
 	text-align: center;
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 1px;
 	margin: 1px;
 }
 
 .hitgrid td {
-	height: 4px;
-	width: 4px;
+	height: 2px;
+	width: 2px;
 	position: relative;
+	border: 1px solid transparent;
 }
 
 .hitgrid td div {
-	height: 3px;
-	width: 3px;
+	height: 2px;
+	width: 2px;
 	top: 0;
 	left: 0;
 }

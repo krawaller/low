@@ -1,8 +1,9 @@
 /** @jsx React.DOM */
 
-var React = require('react'),
+var React = require('react/addons'),
     Router = require('react-router'),
-    Unit = require('./unit');
+    Unit = require('./unit'),
+    ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var List = React.createClass({
     getInitialState: function(){

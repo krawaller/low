@@ -15,6 +15,7 @@ var Hits = React.createClass({
         }
         return (
             <table className='hitgrid'>
+                <tr><td>{print('-2 4')}</td><td>{print('-1 4')}</td><td>{print('0 4')}</td><td>{print('1 4')}</td><td>{print('2 4')}</td></tr>
                 <tr><td>{print('-2 3')}</td><td>{print('-1 3')}</td><td>{print('0 3')}</td><td>{print('1 3')}</td><td>{print('2 3')}</td></tr>
                 <tr><td>{print('-2 2')}</td><td>{print('-1 2')}</td><td>{print('0 2')}</td><td>{print('1 2')}</td><td>{print('2 2')}</td></tr>
                 <tr><td>{print('-2 1')}</td><td>{print('-1 1')}</td><td>{print('0 1')}</td><td>{print('1 1')}</td><td>{print('2 1')}</td></tr>
@@ -22,6 +23,7 @@ var Hits = React.createClass({
                 <tr><td>{print('-2 -1')}</td><td>{print('-1 -1')}</td><td>{print('0 -1')}</td><td>{print('1 -1')}</td><td>{print('2 -1')}</td></tr>
                 <tr><td>{print('-2 -2')}</td><td>{print('-1 -2')}</td><td>{print('0 -2')}</td><td>{print('1 -2')}</td><td>{print('2 -2')}</td></tr>
                 <tr><td>{print('-2 -3')}</td><td>{print('-1 -3')}</td><td>{print('0 -3')}</td><td>{print('1 -3')}</td><td>{print('2 -3')}</td></tr>
+                <tr><td>{print('-2 -4')}</td><td>{print('-1 -4')}</td><td>{print('0 -4')}</td><td>{print('1 -4')}</td><td>{print('2 -4')}</td></tr>
             </table>
         );
     }
