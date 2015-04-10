@@ -158,6 +158,15 @@ var units = {
 		shoots: 5,
 		hits: [[0,1],[0,2],[-1,3],[0,3],[1,3]],
 		quantity: 3
+	},{
+		name: "Mother Superior",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,1,1,1,0,1,1,1],
+		shoots: 4,
+		hits: [[-1,2],[0,1],[0,2],[0,3],[1,2],[-1,-2],[0,-1],[0,-2],[0,-3],[1,-2]],
+		source: "promo"
 	}],
 	undead: [{
 		name: "Azul the Bygone King",
@@ -306,6 +315,14 @@ var units = {
 		shield: 3,
 		attacks: [1,1,0,0,0,0,0,1],
 		moves: [1,1,0,0,0,0,0,1]
+	},{
+		name: "Chancellor Snow",
+		rank: "command",
+		type: "infantry",
+		shield: 5,
+		attacks: [4,3,1,1,1,1,1,3],
+		moves: [1,1,1,1,1,1,1,1],
+		source: "promo"
 	}],
 	elves: [{
 		name: "Erendrial Aegis",
@@ -505,6 +522,13 @@ var units = {
 		type: "cavalry",
 		shield: 5,
 		attacks: [5,3,1,1,0,1,1,3]
+	},{
+		name: "Laerto Alfheim",
+		rank: "command",
+		type: "cavalry",
+		shield: 5,
+		attacks: [0,1,1,3,5,3,1,1],
+		source: "promo"
 	}],
 	lizardmen: [{
 		name: "Kai'itza of Xhotl",
@@ -649,6 +673,13 @@ var units = {
 		type: "infantry",
 		shield: 5,
 		attacks: [3,2,3,1,0,1,3,2]
+	},{
+		name: "King Tetras",
+		rank: "command",
+		type: "infantry",
+		shield: 7,
+		attacks: [5,1,0,1,1,1,0,1],
+		source: "promo"
 	}],
 	orcs: [{
 		name: "Orc Warhog",
@@ -948,6 +979,15 @@ var units = {
 		shield: 9,
 		attacks: [2,1,0,1,1,1,0,1],
 		moves: [1,0,0,0,1,0,0,0],
+		source: "promo"
+	},{
+		name: "Gastus Vile",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,0,3,4,3,0,0],
+		shoots: 5,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
 		source: "promo"
 	}],
 	dwarves: [{
@@ -1294,6 +1334,13 @@ var units = {
 		shield: 9,
 		attacks: [2,0,2,0,1,0,2,0],
 		moves: [1,0,1,0,1,0,1,0],
+		source: "promo"
+	},{
+		name: "Ivana Ironhelm",
+		rank: "command",
+		type: "infantry",
+		shield: 6,
+		attacks: [0,4,0,4,0,4,0,4],
 		source: "promo"
 	}]
 };

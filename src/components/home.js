@@ -14,6 +14,10 @@ Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid too
     </p><p className='instruction'>
 If something isn't working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
+                <p>
+                    <p className='instruction'><strong>2015-04-10: </strong> Added all missing promos prior to the <a href="https://www.kickstarter.com/projects/388956994/lords-of-war-fantasy-battles">LoW Fantasy Battles Kickstarter</a></p>
+                    <p className='instruction'><strong>2015-04-09: </strong> Corrected wrong reach for templar longbowmen</p>
+                </p>
 	        </div>
         );
     }
