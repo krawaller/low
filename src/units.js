@@ -929,7 +929,7 @@ var units = {
 		rank: "special",
 		type: "ranged",
 		shield: 5,
-		attacks: [0,0,0,4,4,4,4,4],
+		attacks: [0,0,0,4,4,4,0,0],
 		moves: [0,0,0,0,1,0,0,0],
 		shoots: 5,
 		hits: [[-1,-2],[-1,-3],[0,-2],[0,-3],[1,-2],[1,-3]],
