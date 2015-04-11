@@ -35,13 +35,13 @@ var Aggregation = React.createClass({
             maxatck:[0,0,0,0,0,0],
             atckdirs:[0,0,0,0,0,0,0,0,0],
             movedirs:[0,0,0,0,0,0,0,0,0],
-            shotstr:[0,0,0,0,0,0,0],
+            shotstr:[0,0,0,0,0,0],
             armies: {dwarves:0,elves:0,orcs:0,templars:0,lizardmen:0,undead:0},
             ranks: {recruit:0,"private":0,regular:0,veteran:0,elite:0,champion:0,special:0,command:0,general:0},
             types: {infantry:0,cavalry:0,magic:0,spear:0,flying:0,berserk:0,ranged:0,bearer:0},
-            monstr: [0,0,0,0,0],
+            monstr: [0,0,0,0],
             moving: {yes:0,no:0},
-            source: {core:0,expansion:0,promo:0},
+            source: {core:0,expansion:0,promo:0,booster:0},
             shotdir: {none:0,up:0,down:0,both:0}
         });
         data.diraverages = _.map(_.range(0,8),function(n){ return data.dirtotals[n]/(data.dircounts[n]||1); });

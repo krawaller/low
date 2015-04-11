@@ -5,7 +5,8 @@ var React = require('react'),
     ArmyStore = require('../armystore'),
     actions = require('../actions'),
     Router = require('react-router'),
-    Link = React.createFactory(Router.Link);
+    Link = React.createFactory(Router.Link),
+    _ = require('lodash');
 
 var Armies = React.createClass({
     mixins: [Reflux.connect(ArmyStore,"armies")],

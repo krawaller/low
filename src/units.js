@@ -357,6 +357,13 @@ var units = {
 		shield: 5,
 		attacks: [0,0,0,1,5,1,0,0]
 	},{
+		name: "Elven Lancemaster",
+		rank: "veteran",
+		type: "spear",
+		shield: 5,
+		attacks: [5,1,0,0,0,0,0,1],
+		source: "booster"
+	},{
 		name: "Elven Archer",
 		rank: "veteran",
 		type: "ranged",
@@ -365,6 +372,16 @@ var units = {
 		shoots: 3,
 		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
 		quantity: 3
+	},{
+		name: "Elven Archer",
+		rank: "veteran",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,1,1,1,1,1,0],
+		shoots: 3,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
 	},{
 		name: "Elven Swordsquall",
 		rank: "veteran",
@@ -386,6 +403,16 @@ var units = {
 		shoots: 4,
 		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
 		quantity: 2
+	},{
+		name: "Elven Bowmaiden",
+		rank: "special",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,1,2,2,2,1,0],
+		shoots: 4,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
 	},{
 		name: "Elven Chariot",
 		rank: "special",
@@ -665,12 +692,29 @@ var units = {
 		hits: [[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,2],[1,3]],
 		quantity: 4
 	},{
+		name: "Quillshot",
+		rank: "elite",
+		type: "ranged",
+		shield: 4,
+		attacks: [1,1,1,0,3,0,1,1],
+		shoots: 3,
+		hits: [[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
+	},{
 		name: "Armoured Trike",
 		rank: "special",
 		type: "cavalry",
 		shield: 5,
 		attacks: [3,4,0,0,2,0,0,4],
 		quantity: 2
+	},{
+		name: "Armoured Trike",
+		rank: "special",
+		type: "cavalry",
+		shield: 5,
+		attacks: [2,0,0,4,3,4,0,0],
+		source: "booster"
 	},{
 		name: "Crocodilian Brave",
 		rank: "special",
@@ -760,6 +804,16 @@ var units = {
 		shoots: 3,
 		hits: [[-1,1],[-1,2],[0,1],[0,2],[0,3],[1,1],[1,2]],
 		quantity: 4
+	},{
+		name: "Skink Dartspitter",
+		rank: "recruit",
+		type: "ranged",
+		shield: 3,
+		attacks: [0,0,0,0,0,0,0,0],
+		shoots: 3,
+		hits: [[-1,-1],[-1,-2],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2]],
+		quantity: 2,
+		source: "booster"
 	},{
 		name: "Zund-Va the Brave",
 		rank: "command",
@@ -1578,7 +1632,6 @@ var firedirdecider = function(def){
 		r.res = ((r.up && r.down) ? 'both' : r.res);
 		return r;
 	},{}).res;
-	console.log(def.name,"fires",result);
 	return result;
 };
 
