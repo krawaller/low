@@ -26,7 +26,7 @@ var Frequencies = React.createClass({
                     </tr>
                     <tr>
                         {[<td key='pc'>%</td>].concat(_.map(this.props.frequencies,function(freq,n){
-                            return <td key={n}>{Math.round(100*freq/a.count)}</td>;
+                            return <td key={n}>{Math.round(100*freq/a.count)||''}</td>;
                         })).concat(!_.isNaN(a.sum/a.count)?<td key='avrg'></td>:[])}
                     </tr>
                 </tbody>

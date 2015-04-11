@@ -9,15 +9,16 @@ var Home = React.createClass({
         return (
         	<div>
                 <p className='logo'><img src='./img/logo.png'/></p>
-            	<p className='instruction'>
+            	<p>
 Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid tool! Here you can see <strong>statistics</strong> for all units or subsets of units, and/or <strong>create mercenary decks</strong> and see stats for the created decks.
-    </p><p className='instruction'>
-If something isn't working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
+    </p><p>
+If something isnt working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
-                <p>
-                    <p className='instruction'><strong>2015-04-10: </strong> Added all missing promos prior to the <a href="https://www.kickstarter.com/projects/388956994/lords-of-war-fantasy-battles">LoW Fantasy Battles Kickstarter</a>. Improved Aggregation display and added source breakdown.</p>
-                    <p className='instruction'><strong>2015-04-09: </strong> Corrected wrong reach for templar longbowmen</p>
-                </p>
+                <dl>
+                    <dt>2015-04-11:</dt><dd>Fixed faulty wyrm driver quantity. Added all (known) expansion and promo cards from the Kickstarter. Improved searchability on ranged attacks.</dd>
+                    <dt>2015-04-10:</dt><dd>Added all missing promos prior to the <a href="https://www.kickstarter.com/projects/388956994/lords-of-war-fantasy-battles">LoW Fantasy Battles Kickstarter</a>. Improved Aggregation display and added source breakdown.</dd>
+                    <dt>2015-04-09:</dt><dd>Corrected wrong reach for templar longbowmen.</dd>
+                </dl>
 	        </div>
         );
     }

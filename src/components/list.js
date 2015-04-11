@@ -3,7 +3,8 @@
 var React = require('react/addons'),
     Router = require('react-router'),
     Unit = require('./unit'),
-    ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+    ReactCSSTransitionGroup = React.addons.CSSTransitionGroup,
+    _ = require('lodash');
 
 var List = React.createClass({
     getInitialState: function(){
@@ -21,7 +22,7 @@ var List = React.createClass({
             return ((u1[by]||0) > (u2[by]||0) ? -1 : 1)*mod;
         });
         var n=0, printTH = function(prop){
-            return <th key={"g"+(n++)} onClick={this.sortBy.bind(this,prop)}>{prop[0].toUpperCase()+prop.substr(1,666)}{prop===by?(this.state.down?'↑':'↓'):' '}</th>
+            return <th key={"g"+(n++)} onClick={this.sortBy.bind(this,prop)}>{prop[0]+prop.substr(1,666)}{prop===by?(this.state.down?'↑':'↓'):' '}</th>
         }.bind(this);
         //console.log("LIST",list,"OFUNITS",this.props.units);
         return (
@@ -34,12 +35,14 @@ var List = React.createClass({
                             printTH("rank"),
                             printTH("type"),
                             printTH("shield"),
-                            <th key='atck'>Attacks<br/>Moves</th>,
-                            printTH("strongest"),
-                            printTH("directions"),
-                            <th key='rng'>Ranged</th>,
-                            printTH("shoots"),
-                            printTH("monstrous")
+                            printTH("monstr"),
+                            <th key='atck'>grid</th>,
+                            printTH("maxatck"),
+                            printTH("atckdirs"),
+                            printTH("movedirs"),
+                            printTH("shotstr"),
+                            <th key='rng'>reticule</th>,
+                            printTH("shotdir")
                         ].concat(this.props.army ? <th key='foo'></th> : [])}
                         </tr>
                     </thead>

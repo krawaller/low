@@ -2,7 +2,8 @@
 
 var React = require('react'),
     RouOptionRowter = require('react-router'),
-    OptionRow = require('./optionrow');
+    OptionRow = require('./optionrow'),
+    _ = require('lodash');
 
 var Search = React.createClass({
     getInitialState: function(){

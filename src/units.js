@@ -1,4 +1,5 @@
-_ = require("lodash");
+var _ = require("lodash"),
+	criteria = require('./criteria');
 
 var units = {
 	templars: [{
@@ -529,6 +530,124 @@ var units = {
 		shield: 5,
 		attacks: [0,1,1,3,5,3,1,1],
 		source: "promo"
+	},{
+		name: "Lesser Dragon Rider",
+		rank: "champion",
+		type: "cavalry",
+		shield: 6,
+		monstrous: 2,
+		attacks: [5,2,2,0,1,0,2,2],
+		moves: [1,0,0,0,1,0,0,0],
+		source: "expansion"
+	},{
+		name: "Lesser Dragon Rider",
+		rank: "champion",
+		type: "cavalry",
+		shield: 6,
+		monstrous: 2,
+		attacks: [1,0,2,2,5,2,2,0],
+		moves: [1,0,0,0,1,0,0,0],
+		source: "expansion"
+	},{
+		name: "Golden Eagle",
+		rank: "private",
+		type: "flying",
+		shield: 3,
+		attacks: [2,3,2,0,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Golden Eagle",
+		rank: "private",
+		type: "flying",
+		shield: 3,
+		attacks: [0,0,2,3,2,0,0,0],
+		source: "expansion"
+	},{
+		name: "Golden Eagle",
+		rank: "private",
+		type: "flying",
+		shield: 3,
+		attacks: [0,0,0,0,2,3,2,0],
+		source: "expansion"
+	},{
+		name: "Golden Eagle",
+		rank: "private",
+		type: "flying",
+		shield: 3,
+		attacks: [2,0,0,0,0,0,2,3],
+		source: "expansion"
+	},{
+		name: "Drow Huntress",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
+		attacks: [4,0,1,0,3,0,1,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion"
+	},{
+		name: "Castanea Solis",
+		rank: "command",
+		type: "magic",
+		shield: 6,
+		magic: [1,1,1,1,1,1,1,1],
+		shoots: 3,
+		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]],
+		source: "expansion"
+	},{
+		name: "Elder Unicorn",
+		rank: "special",
+		type: "cavalry",
+		shield: 5,
+		attacks: [1,4,4,1,1,0,0,0],
+		moves: [0,1,1,0,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Rioting Ent",
+		rank: "champion",
+		type: "spear",
+		shield: 5,
+		monstrous: 3,
+		attacks: [0,0,2,5,3,5,2,0],
+		moves: [0,0,0,1,0,1,0,0]
+	},{
+		name: "Faerie Warrior",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [1,1,1,0,0,0,1,1],
+		moves: [0,0,1,0,0,0,1,0],
+		source: "expansion",
+	},{
+		name: "Ochrom the Wize",
+		rank: "command",
+		type: "magic",
+		shield: 7,
+		magic: [1,1,1,0,0,0,1,1],
+		shoots: 5,
+		hits: [[-2,2],[-2,3],[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3],[2,2],[2,3]],
+		source: "expansion"
+	},{
+		name: "Easter Bunny",
+		rank: "general",
+		type: "infantry",
+		shield: 6,
+		attacks: [0,0,0,5,5,5,0,0],
+		source: "promo"
+	},{
+		name: "Poldarc the Dutiful",
+		rank: "command",
+		type: "bearer",
+		shield: 9,
+		attacks: [0,1,1,1,1,1,1,1],
+		source: "promo"
+	},{
+		name: "Zinnia Elegans",
+		rank: "command",
+		type: "infantry",
+		shield: 6,
+		attacks: [0,0,2,4,2,4,2,0],
+		moves: [0,0,1,1,1,1,1,0],
+		source: "promo"
 	}],
 	lizardmen: [{
 		name: "Kai'itza of Xhotl",
@@ -679,6 +798,110 @@ var units = {
 		type: "infantry",
 		shield: 7,
 		attacks: [5,1,0,1,1,1,0,1],
+		source: "promo"
+	},{
+		name: "Phrynos Chordata",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [2,2,2,0,3,0,2,2],
+		shoots: 5,
+		hits: [[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-2],[1,-3]],
+		source: "expansion"
+	},{
+		name: "Pterodactyl",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [1,2,3,2,1,0,1,0],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Pterodactyl",
+		rank: "private",
+		type: "flying",
+		shield: 2,
+		attacks: [1,0,1,0,1,2,3,2],
+		source: "expansion",
+		quantity: 2
+	},{
+		name: "Dilophosaurus",
+		rank: "private",
+		type: "magic",
+		shield: 4,
+		magic: [0,0,1,0,1,0,1,0],
+		shoots: 3,
+		hits: [[0,-1],[0,-2],[0,-3]]
+	},{
+		name: "King Ctenoch",
+		rank: "command",
+		type: "flying",
+		shield: 5,
+		attacks: [0,0,3,2,4,2,3,0],
+		source: "promo"
+	},{
+		name: "Mehu Adohi",
+		rank: "command",
+		type: "magic",
+		shield: 7,
+		magic: [0,0,1,1,1,1,1,0,0],
+		shoots: 5,
+		hits: [[0,-1],[0,-2],[0,-3]],
+		source: "expansion"
+	},{
+		name: "Bestial Raptor",
+		rank: "special",
+		type: "berserk",
+		shield: 5,
+		attacks: [2,5,2,1,0,0,0,1],
+		source: "expansion"
+	},{
+		name: "Bestial Raptor",
+		rank: "special",
+		type: "berserk",
+		shield: 5,
+		attacks: [2,1,0,0,0,1,2,5],
+		source: "expansion"
+	},{
+		name: "Ankylodon",
+		rank: "champion",
+		type: "cavalry",
+		shield: 8,
+		monstrous: 3,
+		attacks: [0,0,4,0,0,2,2,2],
+		moves: [0,0,1,0,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Ankylodon",
+		rank: "champion",
+		type: "cavalry",
+		shield: 8,
+		monstrous: 3,
+		attacks: [0,2,2,2,0,0,4,0],
+		moves: [0,0,0,0,0,0,1,0],
+		source: "expansion"
+	},{
+		name: "Wretched Croaker",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [0,1,4,1,0,0,0,0],
+		moves: [0,0,1,0,0,0,0,0],
+		source: "expansion"
+	},{
+		name: "Wretched Croaker",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [0,0,0,0,0,1,4,1],
+		moves: [0,0,0,0,0,0,1,0],
+		source: "expansion"
+	},{
+		name: "Gesh Acolyte",
+		rank: "command",
+		type: "bearer",
+		shield: 9,
+		attacks: [1,1,0,1,3,1,0,1],
 		source: "promo"
 	}],
 	orcs: [{
@@ -917,8 +1140,7 @@ var units = {
 		attacks: [5,3,1,0,1,0,1,3],
 		moves: [1,0,1,0,0,0,1,0],
 		monstrous: 2,
-		source: "expansion",
-		quantity: 2
+		source: "expansion"
 	},{
 		name: "Orc Wyrm Driver",
 		rank: "champion",
@@ -927,8 +1149,7 @@ var units = {
 		attacks: [1,0,1,3,5,3,1,0],
 		moves: [0,0,1,0,1,0,1,0],
 		monstrous: 2,
-		source: "expansion",
-		quantity: 2
+		source: "expansion"
 	},{
 		name: "Orc Bloodskin",
 		rank: "elite",
@@ -1345,17 +1566,36 @@ var units = {
 	}]
 };
 
-module.exports = _.reduce(units,function(list,arr,armyname){
+var firedirdecider = function(def){
+	var result =  !def.hits ? 'none' : _.reduce(def.hits,function(r,loc){
+		if (loc[1]>0){
+			r.up = true;
+			r.res = (r.res || "up");
+		} else {
+			r.down = true;
+			r.res = (r.res || "down");
+		}
+		r.res = ((r.up && r.down) ? 'both' : r.res);
+		return r;
+	},{}).res;
+	console.log(def.name,"fires",result);
+	return result;
+};
+
+var units = _.reduce(units,function(list,arr,armyname){
 	return _.reduce(arr,function(list,def,x){
 		_.times(def.quantity||1,function(){
 			list.push(_.omit(_.extend(def,{
 				id: "id"+list.length,
 				army: armyname,
 				source: def.source || "core",
-				directions: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
-				strongest: Math.max.apply(Math,def.attacks || [0,0]),
-				moving: def.moves ? "yes" : "no",
-				ismonstr: def.monstrous ? "yes" : "no"
+				atckdirs: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
+				maxatck: Math.max.apply(Math,def.attacks || [0,0]),
+				monstr: def.monstrous || 0,
+				movedirs: def.moves ? _.reduce(def.moves,function(m,i){return m+i;},0) : 0,
+				shotstr: def.shoots || 0,
+				shotdir: firedirdecider(def),
+				firedir: "none" //firedirdecider(def)
 			}),"quantity"));
 		});
 		return list;
@@ -1364,3 +1604,20 @@ module.exports = _.reduce(units,function(list,arr,armyname){
 	ret[unit.id] = unit;
 	return ret;
 },{});
+
+var faultyunits = _.filter(units,function(unit){
+	return _.any(criteria,function(vals,name){
+		if (!vals[unit[name]]){
+			console.log("Warning! prop",name,"for unit",unit.name,"has illegal value",unit[name]);
+		}
+		return !vals[unit[name]];
+	});
+});
+
+console.log("UNITS",units);
+
+if (faultyunits.length){
+	console.log("FAULTY UNITS",faultyunits);
+}
+
+module.exports = units;
