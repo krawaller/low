@@ -1,5 +1,5 @@
 module.exports = {
-    army: {dwarves:true,elves:true,orcs:true,templars:true,lizardmen:true,undead:true},
+    army: {orcs:true,dwarves:true,elves:true,lizardmen:true,templars:true,undead:true},
     source: {core:true,expansion:true,promo:true,booster:true},
     type: {infantry:true,cavalry:true,magic:true,spear:true,flying:true,berserk:true,ranged:true,bearer:true},
     rank: {recruit:true,"private":true,regular:true,veteran:true,elite:true,champion:true,special:true,command:true,general:true},
