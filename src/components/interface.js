@@ -29,7 +29,7 @@ var Interface = React.createClass({
                 <Aggregation units={list} />
                 <h3>List</h3>
                 <p className='instruction'>
-These are the {list.length} matched units ({Math.round(100*list.length/total)}% of all {total}). Click a headline to sort on that aspect.
+These are the {list.length} matched units ({Math.round(100*list.length/total)}% of all {total}). Click a headline to sort on that aspect. Attack arrows that allow movement are shown in <span class='move'>red</span> in the grid.
                 </p>
 	        	<List units={list} /></div> }
 	        </div>
