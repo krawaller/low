@@ -645,6 +645,14 @@ var units = {
 		moves: [0,0,1,0,0,0,1,0],
 		source: "expansion",
 	},{
+		name: "Faerie Warrior",
+		rank: "private",
+		type: "magic",
+		shield: 5,
+		magic: [0,0,1,1,1,1,1,0],
+		moves: [0,0,1,0,0,0,1,0],
+		source: "expansion",
+	},{
 		name: "Ochrom the Wize",
 		rank: "command",
 		type: "magic",
@@ -886,6 +894,14 @@ var units = {
 		magic: [0,0,1,0,1,0,1,0],
 		shoots: 3,
 		hits: [[0,-1],[0,-2],[0,-3]]
+	},{
+		name: "Dilophosaurus",
+		rank: "private",
+		type: "magic",
+		shield: 4,
+		magic: [1,0,1,0,0,0,1,0],
+		shoots: 3,
+		hits: [[0,1],[0,2],[0,3]]
 	},{
 		name: "King Ctenoch",
 		rank: "command",
@@ -1667,7 +1683,7 @@ var faultyunits = _.filter(units,function(unit){
 	});
 });
 
-console.log("UNITS",units);
+//console.log("UNITS",units);
 
 if (faultyunits.length){
 	console.log("FAULTY UNITS",faultyunits);

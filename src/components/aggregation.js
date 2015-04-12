@@ -29,9 +29,9 @@ var Aggregation = React.createClass({
 
         return (
             <div>
-                {_.reduce(criteria,function(mem,opts,name){
-                    return mem.concat([<Frequencies key={name} description={name} frequencies={data[name]} />,' '])
-                },[])}
+                {_.map(criteria,function(opts,name){
+                    return <Frequencies key={name} description={name} frequencies={data[name]} />;
+                })}
                 <br/>
                 <Reticule description='avrg' dirs={data.diraverages} />{' '}
                 <Reticule description='freq' dirs={data.dircounts} />{' '}
