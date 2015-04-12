@@ -892,6 +892,7 @@ var units = {
 		type: "magic",
 		shield: 4,
 		magic: [0,0,1,0,1,0,1,0],
+		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
 		hits: [[0,-1],[0,-2],[0,-3]]
 	},{
@@ -900,6 +901,7 @@ var units = {
 		type: "magic",
 		shield: 4,
 		magic: [1,0,1,0,0,0,1,0],
+		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
 		hits: [[0,1],[0,2],[0,3]]
 	},{
