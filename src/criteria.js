@@ -10,6 +10,4 @@ module.exports = {
     movedirs: {0:true,1:true,2:true,3:true,4:true,5:true,6:true,7:true,8:true},
     shotstr: {0:true,1:true,2:true,3:true,4:true,5:true},
     shotdir: {none:true,up:true,down:true,both:true}
-    //moving: {yes:true,no:true},
-    //ismonstr: {yes:true,no:true},
 };

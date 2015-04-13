@@ -635,7 +635,8 @@ var units = {
 		shield: 5,
 		monstrous: 3,
 		attacks: [0,0,2,5,3,5,2,0],
-		moves: [0,0,0,1,0,1,0,0]
+		moves: [0,0,0,1,0,1,0,0],
+		source: "expansion"
 	},{
 		name: "Faerie Warrior",
 		rank: "private",
@@ -894,7 +895,8 @@ var units = {
 		magic: [0,0,1,0,1,0,1,0],
 		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
-		hits: [[0,-1],[0,-2],[0,-3]]
+		hits: [[0,-1],[0,-2],[0,-3]],
+		source: "expansion"
 	},{
 		name: "Dilophosaurus",
 		rank: "private",
@@ -903,7 +905,8 @@ var units = {
 		magic: [1,0,1,0,0,0,1,0],
 		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
-		hits: [[0,1],[0,2],[0,3]]
+		hits: [[0,1],[0,2],[0,3]],
+		source: "expansion"
 	},{
 		name: "King Ctenoch",
 		rank: "command",
