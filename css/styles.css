@@ -1,3 +1,8 @@
+.bigpic {
+	display: inline-block;
+	max-width: 800px;
+}
+
 dt {
 	font-weight: bold;
 	margin: 0.5em;

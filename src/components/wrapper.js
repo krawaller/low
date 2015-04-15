@@ -13,6 +13,7 @@ var Wrapper = React.createClass({
             		<Link to="home">Home</Link>
                     <Link to="statistics">Statistics</Link>
             		<Link to="armysel">Army builder</Link>
+                    <Link to="misc">Miscellaneous</Link>
             	</div>
                 <RouteHandler {...this.props} />
             </div>

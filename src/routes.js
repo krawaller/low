@@ -6,6 +6,7 @@ var React = require('react'),
     DefaultRoute = Router.DefaultRoute,
     Interface = require('./components/interface'),
     Home = require('./components/home'),
+    Misc = require('./components/misc'),
     Armies = require('./components/armies'),
     Army = require('./components/army'),
     Wrapper = require('./components/wrapper'),
@@ -14,6 +15,7 @@ var React = require('react'),
 module.exports = (
     <Route handler={Wrapper}>
         <Route name="home" path="/" handler={Home} />
+        <Route name="misc" path="/misc" handler={Misc} />
         <Route name="statistics" path="/statistics" handler={Interface} />
         <Route name="armysel" path="/armies" handler={MultiRoute}>
         	<Route name="army" path="/armies/:armyname" handler={Army} />
