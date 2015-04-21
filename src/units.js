@@ -1285,6 +1285,32 @@ var units = {
 		shoots: 5,
 		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
 		source: "promo"
+	},{
+		name: "Goblin Bow Pest",
+		rank: "regular",
+		type: "ranged",
+		shield: 3,
+		attacks: [0,0,0,1,2,1,0,0],
+		shoots: 2,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
+	},{
+		name: "Orc Catapult",
+		rank: "veteran",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,1,0,0,0,1,0],
+		shoots: 4,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		source: "booster"
+	},{
+		name: "Goblin Spider Rider",
+		rank: "special",
+		type: "cavalry",
+		shield: 4,
+		attacks: [0,1,2,2,3,2,2,1],
+		source: "booster"
 	}],
 	dwarves: [{
 		name: "Dwarf Dowager",
@@ -1638,6 +1664,39 @@ var units = {
 		shield: 6,
 		attacks: [0,4,0,4,0,4,0,4],
 		source: "promo"
+	},{
+		name: "Dwarf Sharpshooter",
+		rank: "regular",
+		type: "ranged",
+		shield: 4,
+		attacks: [0,0,0,0,0,0,0,0],
+		shoots: 5,
+		hits: [[0,-1],[0,-2],[0,-3]],
+		quantity: 2,
+		source: "booster"
+	},{
+		name: "Dwarf Marauder",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [0,0,1,2,4,0,0,0],
+		source: "booster"
+	},{
+		name: "Dwarf Marauder",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [0,0,0,0,4,2,1,0],
+		source: "booster"
+	},{
+		name: "Dwarf Ballista",
+		rank: "special",
+		type: "ranged",
+		shield: 5,
+		attacks: [4,2,0,0,0,0,0,2],
+		shoots: 4,
+		hits: [[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-2],[1,-3]],
+		source: "booster"
 	}]
 };
 
