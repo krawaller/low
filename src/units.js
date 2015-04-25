@@ -168,6 +168,33 @@ var units = {
 		shoots: 4,
 		hits: [[-1,2],[0,1],[0,2],[0,3],[1,2],[-1,-2],[0,-1],[0,-2],[0,-3],[1,-2]],
 		source: "promo"
+	},{
+		name: "Templar Longsword",
+		rank: "elite",
+		type: "infantry",
+		shield: 4,
+		attacks: [0,0,0,4,5,4,0,0],
+		source: "booster"
+	},{
+		name: "Templar Longbow",
+		rank: "elite",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,0,2,2,2,0,0],
+		shoots: 3,
+		hits: [[-1,-2],[-1,-3],[-1,-4],[0,-2],[0,-3],[0,-4],[1,-2],[1,-3],[1,-4]],
+		quantity: 2,
+		source: "booster"
+	},{
+		name: "Templar Trebuchet",
+		rank: "veteran",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,0,2,0,2,0,0],
+		shoots: 5,
+		hits: [[0,-1],[0,-2],[-1,-3],[0,-3],[1,-3]],
+		quantity: 2,
+		source: "booster"
 	}],
 	undead: [{
 		name: "Azul the Bygone King",
@@ -324,6 +351,33 @@ var units = {
 		attacks: [4,3,1,1,1,1,1,3],
 		moves: [1,1,1,1,1,1,1,1],
 		source: "promo"
+	},{
+		name: "Skeleton Archer",
+		rank: "regular",
+		type: "ranged",
+		shield: 3,
+		attacks: [0,0,0,1,1,1,0,0],
+		shoots: 3,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
+	},{
+		name: "Plague Launcher",
+		rank: "elite",
+		type: "ranged",
+		shield: 4,
+		attacks: [1,1,1,1,1,1,1,1],
+		shoots: 4,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		quantity: 2,
+		source: "booster"
+	},{
+		name: "Blood Golem",
+		rank: "elite",
+		type: "infantry",
+		shield: 5,
+		attacks: [0,0,1,4,1,4,1,0],
+		source: "booster"
 	}],
 	elves: [{
 		name: "Erendrial Aegis",
