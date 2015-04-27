@@ -4,7 +4,8 @@ var React = require('react/addons'),
     Router = require('react-router'),
     Unit = require('./unit'),
     ReactCSSTransitionGroup = React.addons.CSSTransitionGroup,
-    _ = require('lodash');
+    _ = require('lodash'),
+    actions = require('../actions');
 
 var List = React.createClass({
     getInitialState: function(){
@@ -26,6 +27,13 @@ var List = React.createClass({
         }.bind(this);
         //console.log("LIST",list,"OFUNITS",this.props.units);
         return (
+            <div>
+                {this.props.army ?(
+                    <p>
+                        {!this.props.mine ? <button onClick={actions.addCaderToArmy.bind({},this.props.armyname,list)}>Add all matched units</button> : ''}{''}
+                        <button onClick={actions.removeCaderFromArmy.bind({},this.props.armyname,list)}>{this.props.mine ? 'Remove all units' : 'Remove all matched units'}</button>
+                    </p>
+                ):''}
             	<table className='unittable'>
                     <thead>
                         <tr> {[
@@ -52,6 +60,7 @@ var List = React.createClass({
                 		},this)}
                     </tbody>
             	</table>
+            </div>
         );
     }
 });

@@ -4,5 +4,7 @@ module.exports = Reflux.createActions([
 	"addArmy",
 	"deleteArmy",
 	"addUnitToArmy",
-	"removeUnitFromArmy"
+	"removeUnitFromArmy",
+	"addCaderToArmy",
+	"removeCaderFromArmy"
 ]);

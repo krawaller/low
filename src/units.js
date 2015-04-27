@@ -1772,9 +1772,10 @@ var firedirdecider = function(def){
 
 var units = _.reduce(units,function(list,arr,armyname){
 	return _.reduce(arr,function(list,def,x){
-		_.times(def.quantity||1,function(){
+		_.times(def.quantity||1,function(n){
 			list.push(_.omit(_.extend(def,{
-				id: "id"+list.length,
+				id2: "id"+list.length,
+				id: armyname.substr(0,2)+(def.source||"core").substr(0,2)+"_"+def.name+"_"+(def.attacks || def.magic ? (def.attacks||def.magic).join("")+"_" : '')+n,
 				army: armyname,
 				source: def.source || "core",
 				atckdirs: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
@@ -1802,7 +1803,10 @@ var faultyunits = _.filter(units,function(unit){
 	});
 });
 
-//console.log("UNITS",units);
+console.log(_.reduce(units,function(mem,u){
+	mem[u.id2] = u.id;
+	return mem;
+},{}));
 
 if (faultyunits.length){
 	console.log("FAULTY UNITS",faultyunits);

@@ -40,7 +40,7 @@ var Army = React.createClass({
 Here you can see the units currently in this army, and the statistics for the chosen units. Use the <strong>ranks</strong>{' '}
 statistics to make sure your mercenary army is correctly put together.
                             </p>
-                            <List units={chosenunits} army={armyids} armyname={name} />
+                            <List units={chosenunits} army={armyids} armyname={name} mine={true} />
                             <Aggregation units={chosenunits} />
                         </div>                            
                     ) : <p className='instruction'>There are no units in this army yet. Add units using the list below!</p>

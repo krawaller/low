@@ -15,6 +15,7 @@ Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid too
 If something isnt working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
                 <dl>
+                    <dt>2015-04-27:</dt><dd>Added convenience buttons to add/remove all matched units in Army Builder</dd>
                     <dt>2015-04-25:</dt><dd>Added the Templars VS Undead Return Fire booster</dd>
                     <dt>2015-04-21:</dt><dd>Added the Orcs VS Dwarves Return Fire booster</dd>
                     <dt>2015-04-11:</dt><dd>Added units newly revealed in the Kickstarter. Added Miscellaneous section with flowcharts.</dd>
