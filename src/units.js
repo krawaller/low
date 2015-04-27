@@ -405,6 +405,13 @@ var units = {
 		attacks: [3,2,2,0,0,0,2,2],
 		quantity: 2
 	},{
+		name: "Elven Royal Guard",
+		rank: "elite",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,2,2,3,2,2,0],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Elven Lancemaster",
 		rank: "veteran",
 		type: "spear",
@@ -489,6 +496,16 @@ var units = {
 		hits: [[-1,3],[0,1],[0,2],[0,3],[1,3]],
 		quantity: 2
 	},{
+		name: "Elven Ballista",
+		rank: "regular",
+		type: "ranged",
+		shield: 3,
+		attacks: [0,0,0,0,2,0,0,0],
+		shoots: 5,
+		hits: [[-1,-3],[0,-1],[0,-2],[0,-3],[1,-3]],
+		quantity: 2,
+		source: "booster" // reversal of fortune
+	},{
 		name: "Elven Lightedge",
 		rank: "regular",
 		type: "infantry",
@@ -512,6 +529,20 @@ var units = {
 		type: "spear",
 		shield: 4,
 		attacks: [1,0,0,0,0,0,3,1]
+	},{
+		name: "Elven Lancewielder",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,3,1,1,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Elven Lancewielder",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,0,0,1,1,3,0],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Elven Battle Tiger",
 		rank: "regular",
@@ -786,12 +817,27 @@ var units = {
 		attacks: [4,2,3,0,2,0,3,2],
 		quantity: 2
 	},{
+		name: "Crocodilian Brave",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [2,0,3,2,4,2,3,0],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Leatherback",
 		rank: "veteran",
 		type: "infantry",
 		shield: 4,
 		attacks: [3,1,0,1,1,1,0,1],
 		quantity: 2
+	},{
+		name: "Leatherback",
+		rank: "veteran",
+		type: "infantry",
+		shield: 4,
+		attacks: [1,1,0,1,3,1,0,1],
+		quantity: 2,
+		source: "booster" // reversal of fortune
 	},{
 		name: "Shrine Guardian",
 		rank: "veteran",
@@ -844,6 +890,20 @@ var units = {
 		shield: 4,
 		attacks: [2,0,0,0,0,0,2,1],
 		quantity: 2
+	},{
+		name: "Lizardman Bulwark",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,2,1,2,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Lizardman Bulwark",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,0,0,2,1,2,0],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Cruor Sacrifice",
 		rank: "recruit",
