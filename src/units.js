@@ -1138,6 +1138,13 @@ var units = {
 		attacks: [4,3,3,0,0,0,3,3],
 		quantity: 2
 	},{
+		name: "Orc Butcher",
+		rank: "special",
+		type: "infantry",
+		shield: 4,
+		attacks: [0,0,3,3,4,3,3,0],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Goblin Spider Rider",
 		rank: "special",
 		type: "cavalry",
@@ -1158,6 +1165,20 @@ var units = {
 		shield: 3,
 		attacks: [3,5,0,0,0,0,1,2],
 		quantity: 2
+	},{
+		name: "Orc Ravager",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,1,2,3,5,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Orc Ravager",
+		rank: "veteran",
+		type: "infantry",
+		shield: 3,
+		attacks: [0,0,0,5,3,2,1,0],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Orc Catapult",
 		rank: "veteran",
@@ -1356,6 +1377,22 @@ var units = {
 		moves: [0,0,0,0,0,1,1,1],
 		source: "expansion"
 	},{
+		name: "Orc Bloodskin",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
+		attacks: [0,1,3,5,0,0,0,0],
+		moves: [0,1,1,1,0,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Orc Bloodskin",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
+		attacks: [0,0,0,0,0,5,3,1],
+		moves: [0,0,0,0,0,1,1,1],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Orc Bullwhip",
 		rank: "special",
 		type: "ranged",
@@ -1483,6 +1520,20 @@ var units = {
 		shield: 2,
 		attacks: [4,3,0,0,0,0,0,4]
 	},{
+		name: "Dwarf Berserker",
+		rank: "regular",
+		type: "berserk",
+		shield: 2,
+		attacks: [0,0,0,4,4,3,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Dwarf Berserker",
+		rank: "regular",
+		type: "berserk",
+		shield: 2,
+		attacks: [0,0,0,3,4,4,0,0],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Dwarf Sharpshooter",
 		rank: "regular",
 		type: "ranged",
@@ -1599,6 +1650,15 @@ var units = {
 		shoots: 5,
 		hits: [[-1,1],[-1,2],[-1,3],[0,1],[0,2],[0,3],[1,1],[1,2],[1,3]]
 	},{
+		name: "Ivor the Mad",
+		rank: "command",
+		type: "ranged",
+		shield: 5,
+		attacks: [0,0,1,2,4,2,1,0],
+		shoots: 5,
+		hits: [[-1,-1],[-1,-2],[-1,-3],[0,-1],[0,-2],[0,-3],[1,-1],[1,-2],[1,-3]],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Jaeger Drakesbane",
 		rank: "command",
 		type: "spear",
@@ -1662,6 +1722,20 @@ var units = {
 		shield: 6,
 		attacks: [1,1,0,0,0,1,1,1],
 		source: "expansion"
+	},{
+		name: "Dwarf Shield Maiden",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [0,1,1,1,1,1,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Dwarf Shield Maiden",
+		rank: "elite",
+		type: "spear",
+		shield: 6,
+		attacks: [0,0,0,1,1,1,1,1],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Iron Walker",
 		rank: "champion",
