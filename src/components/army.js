@@ -26,7 +26,7 @@ var Army = React.createClass({
             chosenunits = _.mapValues(armyids,function(val,id){return this.props.units[id];},this);
         var list = _.filter(this.props.units,function(unit){
             return _.every(this.state.options,function(opts,aspect){
-                return opts[unit[aspect]];
+                return aspect === 'search' ? (opts && opts.length ? unit.name.toLowerCase().match(opts) : true) : opts[unit[aspect]];
             },this);
         },this);
         return (

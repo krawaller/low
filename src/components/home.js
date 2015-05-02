@@ -15,7 +15,7 @@ Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid too
 If something isnt working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
                 <dl>
-                    <dt>2015-05-02:</dt><dd>Added Reversal of Fortune Orcs VS Dwarves booster.</dd>
+                    <dt>2015-05-02:</dt><dd>Added name search filter. Added Reversal of Fortune Orcs VS Dwarves booster.</dd>
                     <dt>2015-04-27:</dt><dd>Added convenience buttons to add/remove all matched units in Army Builder. Added Reversal of Fortune Elves VS Lizardmen booster.</dd>
                     <dt>2015-04-25:</dt><dd>Added the Templars VS Undead Return Fire booster.</dd>
                     <dt>2015-04-21:</dt><dd>Added the Orcs VS Dwarves Return Fire booster.</dd>

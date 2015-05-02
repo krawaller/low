@@ -15,8 +15,8 @@ var Interface = React.createClass({
     },
     render: function() {
         var list = _.filter(this.props.units,function(unit){
-            return _.every(this.state.options,function(opts,aspect){
-                return opts[unit[aspect]];
+            return _.every(this.state.options,function(opts,aspect,str){
+                return aspect === 'search' ? (opts && opts.length ? unit.name.toLowerCase().match(opts) : true) : opts[unit[aspect]];
             },this);
         },this);
         var total = _.keys(this.props.units).length;

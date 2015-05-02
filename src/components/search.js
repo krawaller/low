@@ -7,13 +7,15 @@ var React = require('react'),
 
 var Search = React.createClass({
     getInitialState: function(){
-        return _.extend({},this.props.options);
+        return _.extend({search:""},this.props.options);
     },
     updateOptions: function(aspect,options){
         this.setState(_.object([aspect],[options]));
     },
     submit: function(){
-        this.props.submit(this.state);
+        this.props.submit(_.extend({},this.state,{
+            search: (this.refs.search.getDOMNode().value || '').toLowerCase()
+        }));
     },
     render: function() {
         return (
@@ -24,6 +26,7 @@ var Search = React.createClass({
                         return <OptionRow key={name} name={name} options={opts} updateOptions={this.updateOptions.bind(this,name)} />
                     },this)}
                 </table>
+                <p>Name matching: <input ref='search'></input></p>
                 <button className='searchbutton' onClick={this.submit}>Search</button>
 	        </div>
         );
