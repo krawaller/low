@@ -22,7 +22,7 @@ var Search = React.createClass({
         	<div>
                 <p className='instruction'>Click an option to (de-)select it. Double-click to make it the only one selected in its row. Click an aspect to select all related options. When done, click the 'Search' button to update the result.</p>
                 <table className='searchtable'>
-                    {_.map(this.state,function(opts,name){
+                    {_.map(_.omit(this.state,"search"),function(opts,name){
                         return <OptionRow key={name} name={name} options={opts} updateOptions={this.updateOptions.bind(this,name)} />
                     },this)}
                 </table>
