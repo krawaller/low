@@ -130,7 +130,7 @@ var units = {
 		rank: "recruit",
 		type: "berserk",
 		shield: 1,
-		attacks: [2,5,2,0,0,0,0,0],
+		attacks: [0,2,5,2,0,0,0,0],
 		source: "booster" // reversal of fortune
 	},{
 		name: "Templar Sanctifier",
