@@ -29,6 +29,14 @@ var units = {
 		moves: [1,0,0,0,1,0,0,0],
 		quantity: 3
 	},{
+		name: "Palisade",
+		rank: "veteran",
+		type: "spear",
+		shield: 9,
+		attacks: [0,0,0,1,1,1,0,0],
+		moves: [1,0,0,0,1,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Simeon The Divine",
 		rank: "command",
 		type: "infantry",
@@ -118,6 +126,20 @@ var units = {
 		shield: 1,
 		attacks: [0,0,0,2,5,2,0,0]
 	},{
+		name: "Templar Sanctifier",
+		rank: "recruit",
+		type: "berserk",
+		shield: 1,
+		attacks: [2,5,2,0,0,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Templar Sanctifier",
+		rank: "recruit",
+		type: "berserk",
+		shield: 1,
+		attacks: [0,0,0,0,0,2,5,2],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Templar Zealot",
 		rank: "regular",
 		type: "spear",
@@ -141,6 +163,20 @@ var units = {
 		type: "spear",
 		shield: 4,
 		attacks: [1,0,0,0,0,0,1,3]
+	},{
+		name: "Templar Zealot",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,1,3,1,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Templar Zealot",
+		rank: "regular",
+		type: "spear",
+		shield: 4,
+		attacks: [0,0,0,0,1,3,1,0],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Templar Longbow",
 		rank: "elite",
@@ -240,6 +276,13 @@ var units = {
 		shield: 6,
 		attacks: [0,0,0,4,4,4,0,0]
 	},{
+		name: "Cerberus",
+		rank: "command",
+		type: "cavalry",
+		shield: 6,
+		attacks: [4,4,0,0,0,0,0,4],
+		source: "booster" // reversal of fortune
+	},{
 		name: "Headless Horseman",
 		rank: "veteran",
 		type: "cavalry",
@@ -260,6 +303,14 @@ var units = {
 		shield: 3,
 		attacks: [0,0,1,3,4,3,1,0],
 		quantity: 2
+	},{
+		name: "Hellhound",
+		rank: "veteran",
+		type: "cavalry",
+		shield: 3,
+		attacks: [4,3,1,0,0,0,1,3],
+		quantity: 2,
+		source: "booster" // reversal of fortune
 	},{
 		name: "Oozool the Putrid",
 		rank: "command",
@@ -306,6 +357,20 @@ var units = {
 		shield: 5,
 		attacks: [1,0,0,0,0,0,1,2],
 		quantity: 2
+	},{
+		name: "Skeleton Spearman",
+		rank: "regular",
+		type: "spear",
+		shield: 5,
+		attacks: [0,0,1,2,1,0,0,0],
+		source: "booster" // reversal of fortune
+	},{
+		name: "Skeleton Spearman",
+		rank: "regular",
+		type: "spear",
+		shield: 5,
+		attacks: [0,0,0,0,1,2,1,0],
+		source: "booster" // reversal of fortune
 	},{
 		name: "Volus the Defiler",
 		rank: "command",
