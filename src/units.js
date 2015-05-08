@@ -1395,6 +1395,8 @@ var units = {
 		rank: "command",
 		type: "magic",
 		shield: 6,
+		shoots: 4,
+		hits: [[-1,-2],[-1,-3],[0,-2],[0,-3],[1,-2],[1,-3]],
 		magic: [1,1,1,1,1,1,1,1],
 		source: "expansion"
 	},{
