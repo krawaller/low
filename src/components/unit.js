@@ -27,6 +27,7 @@ var Unit = React.createClass({
                 <td key='mons'><div>{unit.monstrous||''}</div></td>,
             	<td key='atck'><div><Attack unit={unit}/></div></td>,
                 <td key='strng'><div>{unit.maxatck||''}</div></td>,
+                <td key='total'><div>{unit.total||''}</div></td>,
                 <td key='dir'><div>{unit.atckdirs||''}</div></td>,
                 <td key='mdir'><div>{unit.movedirs||''}</div></td>,
                 <td key='shoo'><div>{unit.shotstr||''}</div></td>,
