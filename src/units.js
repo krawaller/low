@@ -1974,6 +1974,7 @@ var firedirdecider = function(def){
 var units = _.reduce(units,function(list,arr,armyname){
 	return _.reduce(arr,function(list,def,x){
 		_.times(def.quantity||1,function(n){
+			var sum = _.sum(def.attacks);
 			list.push(_.omit(_.extend(def,{
 				id2: "id"+list.length,
 				id: armyname.substr(0,2)+(def.source||"core").substr(0,2)+"_"+def.name+"_"+(def.attacks || def.magic ? (def.attacks||def.magic).join("")+"_" : '')+n,
@@ -1981,7 +1982,8 @@ var units = _.reduce(units,function(list,arr,armyname){
 				source: def.source || "core",
 				atckdirs: _.reduce(def.attacks||[],function(count,strength){ return count+Math.min(strength,1);},0),
 				max: Math.max.apply(Math,def.attacks || [0,0]),
-				total: _.sum(def.attacks),
+				total: sum,
+				totaltier: ["0-3","4-7","8-11","12-15","16-19","20-23"][Math.floor(sum/4)],
 				monstr: def.monstrous || 0,
 				movedirs: def.moves ? _.reduce(def.moves,function(m,i){return m+i;},0) : 0,
 				shotstr: def.shoots || 0,

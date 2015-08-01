@@ -6,6 +6,7 @@ module.exports = {
     shield: {1:true,2:true,3:true,4:true,5:true,6:true,7:true,8:true,9:true},
     monstr: {0:true,1:true,2:true,3:true},
     max: {0:true,1:true,2:true,3:true,4:true,5:true},
+    totaltier: {"0-3":true,"4-7":true,"8-11":true,"12-15":true,"16-19":true,"20-23":true},
     atckdirs: {0:true,1:true,2:true,3:true,4:true,5:true,6:true,7:true,8:true},
     movedirs: {0:true,1:true,2:true,3:true,4:true,5:true,6:true,7:true,8:true},
     shotstr: {0:true,1:true,2:true,3:true,4:true,5:true},
