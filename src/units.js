@@ -758,6 +758,14 @@ var units = {
 		rank: "elite",
 		type: "spear",
 		shield: 5,
+		attacks: [3,0,1,0,4,0,1,0],
+		moves: [1,0,1,0,1,0,1,0],
+		source: "expansion"
+	},{
+		name: "Drow Huntress",
+		rank: "elite",
+		type: "spear",
+		shield: 5,
 		attacks: [4,0,1,0,3,0,1,0],
 		moves: [1,0,1,0,1,0,1,0],
 		source: "expansion"
@@ -779,6 +787,14 @@ var units = {
 		moves: [0,1,1,0,0,0,0,0],
 		source: "expansion"
 	},{
+		name: "Elder Unicorn",
+		rank: "special",
+		type: "cavalry",
+		shield: 5,
+		attacks: [1,0,0,0,1,1,4,4],
+		moves: [0,1,1,0,0,0,0,0],
+		source: "expansion"
+	},{
 		name: "Rioting Ent",
 		rank: "champion",
 		type: "spear",
@@ -788,12 +804,22 @@ var units = {
 		moves: [0,0,0,1,0,1,0,0],
 		source: "expansion"
 	},{
+		name: "Rioting Ent",
+		rank: "champion",
+		type: "spear",
+		shield: 5,
+		monstrous: 3,
+		attacks: [3,5,2,0,0,0,2,5],
+		moves: [0,0,0,1,0,1,0,0],
+		source: "expansion"
+	},{
 		name: "Faerie Warrior",
 		rank: "private",
 		type: "magic",
 		shield: 5,
 		magic: [1,1,1,0,0,0,1,1],
 		moves: [0,0,1,0,0,0,1,0],
+		quantity: 2,
 		source: "expansion",
 	},{
 		name: "Faerie Warrior",
@@ -802,6 +828,7 @@ var units = {
 		shield: 5,
 		magic: [0,0,1,1,1,1,1,0],
 		moves: [0,0,1,0,0,0,1,0],
+		quantity: 2,
 		source: "expansion",
 	},{
 		name: "Ochrom the Wize",
@@ -1075,6 +1102,7 @@ var units = {
 		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
 		hits: [[0,-1],[0,-2],[0,-3]],
+		quantity: 2,
 		source: "expansion"
 	},{
 		name: "Dilophosaurus",
@@ -1085,14 +1113,8 @@ var units = {
 		moves: [0,0,1,0,0,0,1,0],
 		shoots: 3,
 		hits: [[0,1],[0,2],[0,3]],
+		quantity: 2,
 		source: "expansion"
-	},{
-		name: "King Ctenoch",
-		rank: "command",
-		type: "flying",
-		shield: 5,
-		attacks: [0,0,3,2,4,2,3,0],
-		source: "promo"
 	},{
 		name: "Mehu Adohi",
 		rank: "command",
@@ -1151,11 +1173,36 @@ var units = {
 		moves: [0,0,0,0,0,0,1,0],
 		source: "expansion"
 	},{
+		name: "Spinosaurion",
+		rank: "champion",
+		type: "spear",
+		shield: 7,
+		monstrous: 3,
+		attacks: [5,3,0,0,1,0,0,3],
+		moves: [1,1,0,0,1,0,0,1],
+		source: "expansion"
+	},{
+		name: "Spinosaurion",
+		rank: "champion",
+		type: "spear",
+		shield: 7,
+		monstrous: 3,
+		attacks: [1,0,0,3,5,3,0,0],
+		moves: [1,0,0,1,1,1,0,0],
+		source: "expansion"
+	},{
 		name: "Gesh Acolyte",
 		rank: "command",
 		type: "bearer",
 		shield: 9,
 		attacks: [1,1,0,1,3,1,0,1],
+		source: "promo"
+	},{
+		name: "King Ctenoch",
+		rank: "command",
+		type: "flying",
+		shield: 5,
+		attacks: [0,0,3,2,4,2,3,0],
 		source: "promo"
 	}],
 	orcs: [{
