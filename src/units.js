@@ -792,7 +792,7 @@ var units = {
 		type: "cavalry",
 		shield: 5,
 		attacks: [1,0,0,0,1,1,4,4],
-		moves: [0,1,1,0,0,0,0,0],
+		moves: [0,0,0,0,0,0,1,1],
 		source: "expansion"
 	},{
 		name: "Rioting Ent",
