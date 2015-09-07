@@ -810,7 +810,7 @@ var units = {
 		shield: 5,
 		monstrous: 3,
 		attacks: [3,5,2,0,0,0,2,5],
-		moves: [0,0,0,1,0,1,0,0],
+		moves: [0,1,0,0,0,0,0,1],
 		source: "expansion"
 	},{
 		name: "Faerie Warrior",
