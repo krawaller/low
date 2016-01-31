@@ -15,6 +15,7 @@ Welcome to the <a href='http://lords-of-war.com'>Lords of War</a> player aid too
 If something isnt working as it should or you have an idea for improvement, drop me a line at <a href='mailto:david@krawaller.se'>david@krawaller.se</a>!
                 </p>
                 <dl>
+                    <dt>2016-01-31:</dt><dd>Added statistics overview for the core armies to the misc page</dd>
                     <dt>2015-09-06:</dt><dd>Added missing units from EvL expansion</dd>
                     <dt>2015-08-02:</dt><dd>Added searching for total attack tiers</dd>
                     <dt>2015-08-01:</dt><dd>Added total attack strength for units (thanks Matt Barnes!)</dd>

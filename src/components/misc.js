@@ -8,6 +8,7 @@ var Misc = React.createClass({
         return (
         	<div>
                 <p>Miscellaneous resources:</p>
+                <img className='bigpic' src='./img/lowstats.png'/>
                 <img className='bigpic' src='./img/flow-ranged.png'/>
                 <img className='bigpic' src='./img/flow-recall.png'/>
 	        </div>
