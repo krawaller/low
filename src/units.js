@@ -2046,7 +2046,7 @@ var units = _.reduce(units,function(list,arr,armyname){
 },{});
 
 var faultyunits = _.filter(units,function(unit){
-	return _.any(criteria,function(vals,name){
+	return _.some(criteria,function(vals,name){
 		if (!vals[unit[name]]){
 			console.log("Warning! prop",name,"for unit",unit.name,"has illegal value",unit[name]);
 		}
